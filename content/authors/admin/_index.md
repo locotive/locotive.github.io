@@ -31,13 +31,13 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'locotive@naver.com'
+    url: 'mailto:locotive@naver.com'
     label: E-mail Adress
   - icon: brands/instagram
     url: https://www.instagram.com/loco_tive
   - icon: brands/github
     url: https://github.com/locotive
-  - icon: brands/custom/spotify
+  - icon: custom/spotify
     url: https://open.spotify.com/playlist/5St07oBQnCjp2MRDtu5jTr?si=74b97ff67c9e4b0d
 
 interests:
