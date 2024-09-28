@@ -25,7 +25,7 @@ role: Student
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: JEONBUK NATIONAL UNIVERSITY
-    url: https://jbnu.ac.kr/
+    url: https://www.jbnu.ac.kr/eng/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
