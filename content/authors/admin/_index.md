@@ -3,11 +3,11 @@
 title: locotive
 
 # Name pronunciation (optional)
-name_pronunciation: jaemin Nam
+name_pronunciation: Jaemin Nam
 
 # Full name (for SEO)
 first_name: Nam
-last_name: jaemin
+last_name: Jaemin
 
 # Status emoji
 status:
@@ -20,31 +20,25 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: JEONBUK NATIONAL UNIVERSITY
+    url: https://jbnu.ac.kr/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
+    url: 'locotive@naver.com'
+    label: E-mail Adress
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/loco_tive
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://github.com/locotive
+  - icon: brands/custom/spotify
+    url: https://open.spotify.com/playlist/5St07oBQnCjp2MRDtu5jTr?si=74b97ff67c9e4b0d
 
 interests:
   - Artificial Intelligence
