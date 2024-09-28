@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: locotive
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: jaemin Nam
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Nam
+last_name: jaemin
 
 # Status emoji
 status:
