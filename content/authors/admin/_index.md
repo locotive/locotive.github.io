@@ -48,7 +48,6 @@ education:
   - area: Bachelor's Degree in Computer Science
     institution: Jeonbuk National University
     date_start: 2021-03-01
-    date_end: Present (3rd year)
     summary: |
       GPA: 3.9/4.5
        Currently pursuing a Bachelor's degree in Computer Science. Focused on software engineering, algorithms, and machine learning. Actively involved in various programming projects and competitions.
