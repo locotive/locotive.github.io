@@ -60,25 +60,13 @@ education:
       - Software Engineering
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
+      url: 'https://csai.jbnu.ac.kr/csai/index.do'
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: Frontend Software Engineer
+    company_name: Javice
+    company_url: 'https://jbnu-javice.github.io/'
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2023-04-30
     summary: |
       Responsibilities include:
       - Migrated infrastructure to a new data center
@@ -90,13 +78,13 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: C++
         description: ''
         percent: 80
         icon: code-bracket
       - name: Data Science
         description: ''
-        percent: 100
+        percent: 40
         icon: chart-bar
       - name: SQL
         description: ''
@@ -106,25 +94,29 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: listening to music
         description: ''
-        percent: 60
+        percent: 80
         icon: person-simple-walk
-      - name: Cats
+      - name: lolchess
         description: ''
         percent: 100
         icon: cat
+      - name: chess
+        description: ''
+        percent: 100
+        icon: chess
       - name: Photography
         description: ''
         percent: 80
         icon: camera
 
 languages:
-  - name: English
+  - name: Korean
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
+  - name: English
+    percent: 60
+  - name: Japanese
     percent: 25
 
 # Awards.
