@@ -60,6 +60,7 @@ education:
       - Software Engineering
     button:
       text: 'Read Thesis'
+      icon: computer
       url: 'https://csai.jbnu.ac.kr/csai/index.do'
 work:
   - position: Frontend Software Engineer
