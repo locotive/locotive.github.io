@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ""
-date: 2022-10-24
+title: "test"
+date: 2024-09-28
 type: landing
 
 design:
