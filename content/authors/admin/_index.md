@@ -154,4 +154,4 @@ awards:
 
 ## About Me
 
-I am a third-year Computer Science student at Jeonbuk National University, and my areas of interest include Web Backend and Data Science.
+I am Nam Jaemin, a third-year Computer Science student at Jeonbuk National University. My areas of interest include Web Backend and Data Science

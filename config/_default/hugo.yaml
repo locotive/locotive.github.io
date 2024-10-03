@@ -6,7 +6,7 @@
 # Website name
 title: locotive
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://locotive.github.io/'
 
 ############################
 ## LANGUAGE
