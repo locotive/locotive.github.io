@@ -30,7 +30,54 @@ sections:
           size: cover
           position: center
           parallax: false
+####
+  - block: slider
+    content:
+      slides:
 
+      - title: <span style="font-size:70%">Javice</span>
+        content: <span style="font-size:70%">studying Web<span style="font-size:70%">
+        align: center
+        background:
+          image:
+            filename: Ai.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+
+      - title: <span style="font-size:70%">Alps</span>
+        content: <span style="font-size:70%">studying algorithm solving</span>
+        align: center
+        background:
+          image:
+            filename: healthcare.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+
+      - title: <span style="font-size:70%">Photobus</span>
+        content: <span style="font-size:70%">studying photography</span>
+        align: center
+        background:
+          image:
+            filename: mathematics.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+
+    design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_height: '350px'
+      slide_width: '100px'
+      is_fullscreen: false
+      # Automatically transition through slides?
+      loop: true
+      # Duration of transition between slides (in ms)
+      interval: 3000
+####
   - block: markdown
     content:
       title: '📚 My Research'
