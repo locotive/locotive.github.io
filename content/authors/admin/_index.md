@@ -106,7 +106,7 @@ skills:
       - name: chess
         description: ''
         percent: 100
-        icon: chess
+        icon: cat
       - name: Photography
         description: ''
         percent: 80
