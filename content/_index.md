@@ -96,7 +96,6 @@ sections:
       # Duration of transition between slides (in ms)
       interval: 3000
 
-
   - block: markdown
     content:
       title: '📚 My Research'
