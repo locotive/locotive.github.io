@@ -30,7 +30,7 @@ sections:
           size: cover
           position: center
           parallax: false
-####
+
   - block: slider
     content:
       slides:
@@ -77,7 +77,7 @@ sections:
       loop: true
       # Duration of transition between slides (in ms)
       interval: 3000
-####
+
   - block: markdown
     content:
       title: '📚 My Research'
