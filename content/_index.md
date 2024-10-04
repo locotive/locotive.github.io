@@ -41,7 +41,7 @@ sections:
       # Duration of transition between slides (in ms)
       interval: 3000
 
-  - block: slider
+  - block: markdown
     content:
       title: '📚 Image Slider'
       slides:
