@@ -48,13 +48,16 @@ sections:
       css_class: ""
     slides:
       - slide:
-          image: "Javice.png"
+          image: 
+          filename: "Javice.png"
           title: "Image 1 Title"
       - slide:
-          image: "alps.png"
+          image:
+          filename: "alps.png"
           title: "Image 2 Title"
       - slide:
-          image: "photobus.png"
+          image:
+          filename: "photobus.png"
           title: "Image 3 Title"
     design:
       is_fullscreen: false
