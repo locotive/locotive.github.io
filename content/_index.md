@@ -37,15 +37,15 @@ sections:
     slides:
       - slide:
           image: 
-          filename: "Javice.png"
+          filename: Javice.png
           title: "Image 1 Title"
       - slide:
           image:
-          filename: "alps.png"
+          filename: alps.png
           title: "Image 2 Title"
       - slide:
           image:
-          filename: "photobus.png"
+          filename: photobus.png
           title: "Image 3 Title"
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
