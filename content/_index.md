@@ -42,6 +42,31 @@ sections:
       interval: 3000
 
   - block: markdown
+  content:
+    title: '📚 Image Slider'
+    text: ""
+  design:
+    css_class: ""
+  slides:
+    - slide:
+        image: "Javice.png"
+        title: "Image 1 Title"
+    - slide:
+        image: "alps.png"
+        title: "Image 2 Title"
+    - slide:
+        image: "photobus.png"
+        title: "Image 3 Title"
+  design:
+    is_fullscreen: false
+    # 슬라이더 반복 여부 (true면 반복)
+    loop: true
+    # 자동 전환 시간 (ms 단위, 5000ms = 5초)
+    interval: 5000
+    # 슬라이드 전환 애니메이션 속도 (옵션)
+    transition_speed: "slow"
+
+  - block: markdown
     content:
       title: '📚 My Research'
       subtitle: ''
