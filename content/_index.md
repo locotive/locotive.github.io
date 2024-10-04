@@ -41,6 +41,7 @@ sections:
             position: center
             color: '#000'
             size: cover
+      slides:
         - title: "<span style='font-size:70%'>alps</span>"
           content: "<span style='font-size:70%'>알고리즘 스터디</span>"
           align: center
@@ -52,6 +53,7 @@ sections:
             position: center
             color: '#000'
             size: cover
+      slides:
         - title: "<span style='font-size:70%'>photobus</span>"
           content: "<span style='font-size:70%'>사진 공부</span>"
           align: center
