@@ -31,20 +31,10 @@ sections:
           position: center
           parallax: false
 
-    design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: '350px'
-      slide_width: '100px'
-      is_fullscreen: false
-      # Automatically transition through slides?
-      loop: true
-      # Duration of transition between slides (in ms)
-      interval: 3000
-
   - block: markdown
     content:
       title: '📚 Image Slider'
-    slider:
+    slides:
       - slide:
           image: 
           filename: "Javice.png"
@@ -58,10 +48,14 @@ sections:
           filename: "photobus.png"
           title: "Image 3 Title"
     design:
+      # Slide height is automatic unless you force a specific height (e.g. '400px')
+      slide_height: '350px'
+      slide_width: '100px'
       is_fullscreen: false
+      # Automatically transition through slides?
       loop: true
+      # Duration of transition between slides (in ms)
       interval: 3000
-      transition_speed: "slow"
 
 
   - block: markdown
