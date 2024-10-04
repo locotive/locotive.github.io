@@ -8,45 +8,6 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: slider
-    content:
-      slides:
-        - title: "<span style='font-size:70%'>Javice</span>"
-          content: "<span style='font-size:70%'>웹 스터디</span>"
-          align: center
-          background:
-            image:
-              filename: Javice.png
-              filters:
-                brightness: 0.4
-            position: center
-            color: '#000'
-        - title: "<span style='font-size:70%'>alps</span>"
-          content: "<span style='font-size:70%'>알고리즘 스터디</span>"
-          align: center
-          background:
-            image:
-              filename: alps.png
-              filters:
-                brightness: 0.4
-            position: center
-            color: '#000'
-        - title: "<span style='font-size:70%'>photobus</span>"
-          content: "<span style='font-size:70%'>사진 공부</span>"
-          align: center
-          background:
-            image:
-              filename: photobus.png
-              filters:
-                brightness: 0.4
-            position: center
-            color: '#000'
-    design:
-      slide_height: '350px'
-      is_fullscreen: false
-      loop: true
-      interval: 3000
-      
   - block: resume-biography-3
     content:
       username: admin
@@ -65,6 +26,49 @@ sections:
           size: cover
           position: center
           parallax: false
+
+  - block: slider
+    content:
+      slides:
+        - title: "<span style='font-size:70%'>Javice</span>"
+          content: "<span style='font-size:70%'>웹 스터디</span>"
+          align: center
+          background:
+            image:
+              filename: Javice.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
+        - title: "<span style='font-size:70%'>alps</span>"
+          content: "<span style='font-size:70%'>알고리즘 스터디</span>"
+          align: center
+          background:
+            image:
+              filename: alps.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
+        - title: "<span style='font-size:70%'>photobus</span>"
+          content: "<span style='font-size:70%'>사진 공부</span>"
+          align: center
+          background:
+            image:
+              filename: photobus.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
+    design:
+      slide_height: '350px'
+      is_fullscreen: false
+      loop: true
+      interval: 3000
+
 
   - block: markdown
     content:
