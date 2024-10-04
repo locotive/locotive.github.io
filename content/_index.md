@@ -27,25 +27,45 @@ sections:
           position: center
           parallax: false
 
-    # 슬라이더 추가
   - block: slider
     content:
       slides:
-        - slide:
-            image: "Javice.png"
-            title: "Image 1 Title"
-        - slide:
-            image: "alps.png"
-            title: "Image 2 Title"
-        - slide:
-            image: "photobus.png"
-            title: "Image 3 Title"
-      design:
-        is_fullscreen: false
-        loop: true
-        interval: 5000
-        transition_speed: "slow"
-
+      - slide:
+        - title: "<span style='font-size:70%'>Javice</span>"
+          content: "<span style='font-size:70%'>웹 스터디</span>"
+          align: center
+          background:
+            image:
+              filename: Javice.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
+      - slide:
+        - title: "<span style='font-size:70%'>alps</span>"
+          content: "<span style='font-size:70%'>알고리즘 스터디</span>"
+          align: center
+          background:
+            image:
+              filename: alps.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
+      - slide:
+        - title: "<span style='font-size:70%'>photobus</span>"
+          content: "<span style='font-size:70%'>사진 공부</span>"
+          align: center
+          background:
+            image:
+              filename: photobus.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
 
   - block: markdown
     content:
