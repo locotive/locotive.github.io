@@ -44,19 +44,19 @@ sections:
   - block: markdown
     content:
       title: '📚 Image Slider'
-      slides:
-        - slide:
-            image: 
-            filename: "Javice.png"
-            title: "Image 1 Title"
-        - slide:
-            image:
-            filename: "alps.png"
-            title: "Image 2 Title"
-        - slide:
-            image:
-            filename: "photobus.png"
-            title: "Image 3 Title"
+    slides:
+      - slide:
+          image: 
+          filename: "Javice.png"
+          title: "Image 1 Title"
+      - slide:
+          image:
+          filename: "alps.png"
+          title: "Image 2 Title"
+      - slide:
+          image:
+          filename: "photobus.png"
+          title: "Image 3 Title"
     design:
       is_fullscreen: false
       loop: true
