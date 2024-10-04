@@ -31,7 +31,7 @@ sections:
           position: center
           parallax: false
 
-  - block: markdown
+  - block: slider
     content:
       title: '📚 Image Slider'
     slides:
