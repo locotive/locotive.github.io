@@ -63,12 +63,12 @@ sections:
             position: center
             color: '#000'
             size: cover
-     design:
-      slider:
-        autoplay: true
-        interval: 5000
-        show_arrows: true
-        show_dots: true  
+      design:
+        slider:
+          autoplay: true
+          interval: 5000
+          show_arrows: true
+          show_dots: true  
 
   - block: markdown
     content:
