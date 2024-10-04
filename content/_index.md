@@ -33,20 +33,37 @@ sections:
 
   - block: markdown
     content:
-      title: '📚 Image Slider'
-    slides:
-      - slide:
-          image: 
-          filename: Javice.png
-          title: "Image 1 Title"
-      - slide:
-          image:
-          filename: alps.png
-          title: "Image 2 Title"
-      - slide:
-          image:
-          filename: photobus.png
-          title: "Image 3 Title"
+      slides:
+        - title: <span style="font-size:70%">Javice</span>
+          content: <span style="font-size:70%">웹 스터디<span style="font-size:70%">
+          align: center
+          background:
+            image:
+              filename: Javice.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+        - title: <span style="font-size:70%">alps</span>
+          content: <span style="font-size:70%">알고리즘 스터디<span style="font-size:70%">
+          align: center
+          background:
+            image:
+              filename: alps.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+        - title: <span style="font-size:70%">photobus</span>
+          content: <span style="font-size:70%">사진 공부<span style="font-size:70%">
+          align: center
+          background:
+            image:
+              filename: photobus.png
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: '350px'
