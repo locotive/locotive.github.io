@@ -46,11 +46,9 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I’m passionate about exploring various fields within computer science, with a particular focus on backend web development. While I enjoy working on web technologies, I'm also eager to dive deeper into areas like cloud computing and data science, which I haven't yet fully explored.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+        I’m always open to learning new things and collaborating on innovative projects. If you share similar interests or have exciting ideas, feel free to reach out! 😃
     design:
       columns: '1'
   - block: collection
