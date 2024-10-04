@@ -65,11 +65,11 @@ sections:
             position: center
             color: '#000'
             size: cover
-    design:
-      slide_height: '350px'
-      is_fullscreen: false
-      loop: true
-      interval: 3000
+      design:
+        slide_height: '350px'
+        is_fullscreen: false
+        loop: true
+        interval: 3000
 
 
   - block: markdown
