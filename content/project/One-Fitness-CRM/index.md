@@ -1,7 +1,7 @@
 ---
 title: One-Fitness-CRM
-date: 2024-7-26
-external_link: https://github.com/scikit-learn/scikit-learn
+date: 2024-07-26
+external_link: https://github.com/TaeYunAhn/One_Fitness_CRM
 tags:
   - React
   - FrontendDevelopment 
