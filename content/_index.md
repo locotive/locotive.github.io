@@ -30,61 +30,6 @@ sections:
           size: cover
           position: center
           parallax: false
-    
-  - block: slider
-    content:
-      slides:
-
-      - title: <span style="font-size:70%">Javice</span>
-        content: <span style="font-size:70%">studying Web<span style="font-size:70%">
-        align: center
-        background:
-          image:
-            filename: Javice.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">link</span>
-          text-color: '#000'
-          url: https://jbnu-javice.github.io/
-
-      - title: <span style="font-size:70%">Alps</span>
-        content: <span style="font-size:70%">studying algorithm solving</span>
-        align: center
-        background:
-          image:
-            filename: alps.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">link</span>
-          text-color: '#000'
-          url: https://sites.google.com/view/jbnu-alps
-
-      - title: <span style="font-size:70%">Photobus</span>
-        content: <span style="font-size:70%">studying photography</span>
-        align: center
-        background:
-          image:
-            filename: photobus.jpg
-            filters:
-              brightness: 0.4
-          position: center
-          color: '#000'
-        link:
-          icon: user
-          icon_pack: fas
-          text: <span style="font-size:60%">link</span>
-          text-color: '#000'
-          url: http://www.jbnudongari.com/file/club_detail_view.php?cs_ancestor=2&cs_mkey=2&cateno=4&no=63
 
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
