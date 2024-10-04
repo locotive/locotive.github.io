@@ -44,7 +44,7 @@ sections:
   - block: markdown
     content:
       title: '📚 Image Slider'
-    slides:
+    slider:
       - slide:
           image: 
           filename: "Javice.png"
