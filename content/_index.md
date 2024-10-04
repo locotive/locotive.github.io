@@ -27,7 +27,7 @@ sections:
           position: center
           parallax: false
 
-- block: slider
+ - block: slider
   content:
     slides:
       - title: "<span style='font-size:70%'>Javice</span>"
