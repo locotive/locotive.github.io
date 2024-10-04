@@ -8,9 +8,14 @@ imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
+  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap
+
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
+  - source: modules/blox-bootstrap/layouts/partials/blocks
+    target: layouts/partials/blocks
+    includeFiles: 'slider.html'
   - source: hugo-blox/blox/community
     target: layouts/partials/blox/community/
     includeFiles: '**.html'
