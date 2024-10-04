@@ -31,7 +31,7 @@ sections:
     content:
       slides:
         - title: "<span style='font-size:70%'>Javice</span>"
-          content: "<span style='font-size:70%'>웹 스터디<span>"
+          content: "<span style='font-size:70%'>웹 스터디</span>"
           align: center
           background:
             image:
@@ -41,7 +41,7 @@ sections:
             position: center
             color: '#000'
         - title: "<span style='font-size:70%'>alps</span>"
-          content: "<span style='font-size:70%'>알고리즘 스터디<span>"
+          content: "<span style='font-size:70%'>알고리즘 스터디</span>"
           align: center
           background:
             image:
@@ -51,7 +51,7 @@ sections:
             position: center
             color: '#000'
         - title: "<span style='font-size:70%'>photobus</span>"
-          content: "<span style='font-size:70%'>사진 공부<span>"
+          content: "<span style='font-size:70%'>사진 공부</span>"
           align: center
           background:
             image:
@@ -62,10 +62,10 @@ sections:
             color: '#000'
     design:
       slide_height: '350px'
-      slide_width: '100px'
       is_fullscreen: false
       loop: true
       interval: 3000
+
 
   - block: markdown
     content:
