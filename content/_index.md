@@ -31,9 +31,9 @@ sections:
           position: center
           parallax: false
     
-  - block: carousel
+  - block: slider
     content:
-      image:
+      slides:
 
       - title: <span style="font-size:70%">Javice</span>
         content: <span style="font-size:70%">studying Web<span style="font-size:70%">
