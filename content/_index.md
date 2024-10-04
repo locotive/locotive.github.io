@@ -28,12 +28,8 @@ sections:
           parallax: false
 
     # 슬라이더 추가
-  - block: markdown
+  - block: slider
     content:
-      title: "📚 Image Slider"
-      text: ""
-    design:
-      css_class: ""
       slides:
         - slide:
             image: "Javice.png"
