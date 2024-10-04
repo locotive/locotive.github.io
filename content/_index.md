@@ -31,48 +31,60 @@ sections:
           position: center
           parallax: false
     
-  - block: markdown
+  - block: carousel
     content:
-    text: |-
-      <!-- HTML과 JavaScript를 이용한 슬라이더 -->
-      <div id="customSlider" class="slider">
-        <div class="slide">
-          <img src="assets/media/Javice.jpg" alt="Javice" style="filter: brightness(0.4);">
-          <div class="caption"><a href="https://jbnu-javice.github.io/">Javice - studying Web</a></div>
-        </div>
-        <div class="slide">
-          <img src="assets/media/alps.jpg" alt="Alps" style="filter: brightness(0.4);">
-          <div class="caption"><a href="https://sites.google.com/view/jbnu-alps">Alps - studying algorithm solving</a></div>
-        </div>
-        <div class="slide">
-          <img src="assets/media/photobus.jpg" alt="Photobus" style="filter: brightness(0.4);">
-          <div class="caption"><a href="http://www.jbnudongari.com/file/club_detail_view.php?cs_ancestor=2&cs_mkey=2&cateno=4&no=63">Photobus - studying photography</a></div>
-        </div>
-      </div>
+      image:
 
-      <style>
-        /* 슬라이더 CSS */
-        .slider { position: relative; width: 100%; overflow: hidden; }
-        .slide { display: none; text-align: center; }
-        .slide img { width: 100%; }
-        .caption { position: absolute; bottom: 10px; color: #fff; background: rgba(0, 0, 0, 0.5); width: 100%; }
-      </style>
+      - title: <span style="font-size:70%">Javice</span>
+        content: <span style="font-size:70%">studying Web<span style="font-size:70%">
+        align: center
+        background:
+          image:
+            filename: Javice.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+        link:
+          icon: user
+          icon_pack: fas
+          text: <span style="font-size:60%">link</span>
+          text-color: '#000'
+          url: https://jbnu-javice.github.io/
 
-      <script>
-        let slideIndex = 0;
-        showSlides();
+      - title: <span style="font-size:70%">Alps</span>
+        content: <span style="font-size:70%">studying algorithm solving</span>
+        align: center
+        background:
+          image:
+            filename: alps.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+        link:
+          icon: user
+          icon_pack: fas
+          text: <span style="font-size:60%">link</span>
+          text-color: '#000'
+          url: https://sites.google.com/view/jbnu-alps
 
-        function showSlides() {
-          const slides = document.getElementsByClassName("slide");
-          for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) { slideIndex = 1 }
-          slides[slideIndex - 1].style.display = "block";
-          setTimeout(showSlides, 3000); // 3초마다 전환
-        }
-      </script>
+      - title: <span style="font-size:70%">Photobus</span>
+        content: <span style="font-size:70%">studying photography</span>
+        align: center
+        background:
+          image:
+            filename: photobus.jpg
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#000'
+        link:
+          icon: user
+          icon_pack: fas
+          text: <span style="font-size:60%">link</span>
+          text-color: '#000'
+          url: http://www.jbnudongari.com/file/club_detail_view.php?cs_ancestor=2&cs_mkey=2&cateno=4&no=63
 
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
