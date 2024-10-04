@@ -41,7 +41,7 @@ sections:
       # Duration of transition between slides (in ms)
       interval: 3000
 
-  - block: markdown
+  - block: autoSlide
     content:
       title: '📚 Image Slider'
       slides:
@@ -60,7 +60,7 @@ sections:
     design:
       is_fullscreen: false
       loop: true
-      interval: 5000
+      interval: 3000
       transition_speed: "slow"
 
 
