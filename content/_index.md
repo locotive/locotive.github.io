@@ -5,16 +5,13 @@ date: 2024-09-28
 type: landing
 
 design:
-  # Default section spacing
   spacing: "6rem"
 
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
-      # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
         url: uploads/resume.pdf
@@ -23,7 +20,6 @@ sections:
       background:
         color: black
         image:
-          # Add your image background to `assets/media/`.
           filename: stacked-peaks.svg
           filters:
             brightness: 1.0
@@ -34,8 +30,8 @@ sections:
   - block: slider
     content:
       slides:
-        - title: <span style="font-size:70%">Javice</span>
-          content: <span style="font-size:70%">웹 스터디<span style="font-size:70%">
+        - title: "<span style='font-size:70%'>Javice</span>"
+          content: "<span style='font-size:70%'>웹 스터디<span>"
           align: center
           background:
             image:
@@ -44,8 +40,8 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-        - title: <span style="font-size:70%">alps</span>
-          content: <span style="font-size:70%">알고리즘 스터디<span style="font-size:70%">
+        - title: "<span style='font-size:70%'>alps</span>"
+          content: "<span style='font-size:70%'>알고리즘 스터디<span>"
           align: center
           background:
             image:
@@ -54,8 +50,8 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-        - title: <span style="font-size:70%">photobus</span>
-          content: <span style="font-size:70%">사진 공부<span style="font-size:70%">
+        - title: "<span style='font-size:70%'>photobus</span>"
+          content: "<span style='font-size:70%'>사진 공부<span>"
           align: center
           background:
             image:
@@ -65,24 +61,17 @@ sections:
             position: center
             color: '#000'
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
       slide_height: '350px'
       slide_width: '100px'
       is_fullscreen: false
-      # Automatically transition through slides?
       loop: true
-      # Duration of transition between slides (in ms)
       interval: 3000
-
 
   - block: markdown
     content:
       title: '📚 My Research'
-      subtitle: ''
       text: |-
-        I’m passionate about exploring various fields within computer science, with a particular focus on backend web development. While I enjoy working on web technologies, I'm also eager to dive deeper into areas like cloud computing and data science, which I haven't yet fully explored.
-
-        I’m always open to learning new things and collaborating on innovative projects. If you share similar interests or have exciting ideas, feel free to reach out! 😃
+        I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
     design:
       columns: '1'
   - block: collection
