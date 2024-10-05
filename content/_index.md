@@ -35,7 +35,7 @@ sections:
           align: center
           background:
             image:
-              filename: JBNU.jpg
+              filename: JBNU.png
               filters:
                 brightness: 0.4
             position: center
