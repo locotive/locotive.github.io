@@ -11,8 +11,7 @@ main:
     name: About Me
     url: /
     weight: 110
-  - parent: BIO
-    name: Experience
+  - name: Experience
     url: experience/
     weight: 120
   - parent: Experience
@@ -51,4 +50,3 @@ main:
   - name: Contact
     url: contact/
     weight: 500
-
