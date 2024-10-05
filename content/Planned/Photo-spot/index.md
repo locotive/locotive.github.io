@@ -1,12 +1,17 @@
 ---
 title: Photo-spot
 
+authors:
+  - admin
+
 tags:
   - Interactive Google Map with curated photo spots.
   - Real-time weather information.
   - Light pollution maps for night photography planning.
   - User-friendly interface for easy navigation and exploration.
-links:
+  
+share: false
+featured: true
 
 ---
 
