@@ -5,7 +5,6 @@ date: 2024-09-01
 authors:
     - admin
 type: docs
-draft: false
 math: false
 tags:
  - Operating Systems
