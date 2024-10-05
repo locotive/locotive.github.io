@@ -97,7 +97,7 @@ sections:
         folders:
           - studying
     design:
-      view: lo_list
+      layout: list
       columns: 3
 
   - block: collection
@@ -107,7 +107,7 @@ sections:
         folders:
           - progress
     design:
-      view: lo_single
+      layout: single
       columns: 1
 
   - block: collection
