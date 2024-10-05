@@ -24,6 +24,13 @@
 
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
+{{ $summary := "" }}
+{{ if $item.Params.summary }}
+  {{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if $item.Summary }}
+  {{ $summary = $item.Summary }}
+{{ end }}
+
 <div class="custom-list-grid">
   <div class="custom-card">
     <!-- 아이콘 출력 -->
