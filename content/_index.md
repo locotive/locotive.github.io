@@ -94,7 +94,7 @@ sections:
         exclude_featured: false
     design:
       view: article-grid
-      columns: 3
+      columns: 1
 
   - block: collection
     content:
