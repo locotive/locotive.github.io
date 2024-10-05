@@ -9,18 +9,19 @@ tags:
   - Web Development
 image:
   filename: "featured.jpg"
+  summary: "Backend study materials"
 ---
 
 ## Plan
 This is a focused plan to master Backend development over the winter break. Below is a roadmap that outlines the learning objectives and key phases. Each phase combines both theory and hands-on practice to maximize learning efficiency, diving deep into each topic.
 
 ## Laying the Foundations (Weeks 1-2)
-# Key Topics:
+**Key Topics:**
 Understanding HTTP/HTTPS Protocols: Learn how client-server communication works, including HTTP status codes, headers, and cookies.
 REST API: Understand what RESTful APIs are and how to design and use them.
 Git & GitHub: Learn how to manage version control using Git, and practice collaboration by hosting a project on GitHub.
 ## Choosing a Backend Language and Basic Learning (Weeks 3-5)
-Key Topics:
+**Key Topics:**
 Choose a language like Python (Django) or Node.js (Express) and dive deep:
 
 Start with basic syntax and gradually move to building a web server.
