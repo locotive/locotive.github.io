@@ -25,15 +25,8 @@
     <i class="{{ $icon_pack }} {{ $icon }} pub-icon" aria-hidden="true"></i>
 
     <!-- 이미지 출력 -->
-    {{ if $data.image }}
-      <div class="custom-image">
-        <img src="{{ $data.image | relURL }}" alt="{{ $item.Title }}" />
-      </div>
-    {{ else }}
-      <!-- 이미지가 없을 때 기본 이미지 제공 -->
-      <div class="custom-image">
-        <img src="/path/to/default/image.jpg" alt="Default Image" />
-      </div>
+    {{ with .Params.image }}
+      <img src="{{ . | relURL }}" alt="{{ .Title }}">
     {{ end }}
 
     <!-- 제목과 요약 출력 -->
