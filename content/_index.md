@@ -54,8 +54,9 @@ sections:
             color: '#000'
             size: cover
               link:  # 버튼 추가
-                url: "https://jbnu-javice.github.io/"  # 이동할 페이지 링크
-                text: "Learn More"   # 버튼에 표시될 텍스트
+              url: "https://jbnu-javice.github.io/"  # 이동할 페이지 링크
+              text: "Learn More"   # 버튼에 표시될 텍스트
+        - title: "<span style='font-size:70%'>alps</span>"
           content: "<span style='font-size:70%'>알고리즘 스터디</span>"
           align: center
           background:
@@ -69,7 +70,6 @@ sections:
               link:  # 버튼 추가
                 url: "https://sites.google.com/view/jbnu-alps"  # 이동할 페이지 링크
                 text: "Learn More"   # 버튼에 표시될 텍스트
-        - title: "<span style='font-size:70%'>alps</span>"
         - title: "<span style='font-size:70%'>photobus</span>"
           content: "<span style='font-size:70%'>사진 공부</span>"
           align: center
