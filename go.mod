@@ -1,4 +1,4 @@
-module github.com/HugoBlox/hugo-blox-builder/starters-bootstrap/academic-cv
+module github.com/HugoBlox/hugo-blox-builder/starters/academic-cv
 
 go 1.16
 
