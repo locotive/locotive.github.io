@@ -1,20 +1,20 @@
 <div class="custom-list-grid">
-  {{ range .Pages }}
-    {{ $page := . }}
+  {{ $item := .item }}
+  {{ $has_attachments := partial "functions/has_attachments" $item }}
 
     {{/* 링크 설정 */}}
-    {{ $link := $page.RelPermalink }}
+    {{ $link := $item.RelPermalink }}
 
     {{/* 요약 설정 */}}
     {{ $summary := "" }}
-    {{ if $page.Params.summary }}
-      {{ $summary = $page.Params.summary | markdownify | emojify }}
-    {{ else if $page.Summary }}
-      {{ $summary = $page.Summary }}
+    {{ if $item.Params.summary }}
+      {{ $summary = $item.Params.summary | markdownify | emojify }}
+    {{ else if $item.Summary }}
+      {{ $summary = $item.Summary }}
     {{ end }}
 
     {{/* 대표 이미지 설정 */}}
-    {{ $resource := $page.Params.image }}
+    {{ $resource := $item.Params.image }}
     {{ if $resource }}
       {{ $resource = $resource.filename }}
     {{ end }}
