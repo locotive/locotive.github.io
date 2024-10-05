@@ -79,8 +79,10 @@ sections:
   - block: collection
     content:
       filters:
-        - experience
+        folders:
+          - experience
 
+  
   - block: collection
     content:
       title: Completed Projects
