@@ -17,6 +17,7 @@ sections:
         url: uploads/resume.pdf
     design:
       css_class: dark
+      css_id: about-me
       background:
         color: black
         image:
@@ -81,33 +82,25 @@ sections:
           show_arrows: true
           show_dots: true  
 
+  # Experience Section
   - block: resume-experience
     content:
       username: admin
     design:
-      # Hugo date format
+      css_id: experience
       date_format: 'January 2006'
-      # Education or Experience section first?
       is_education_first: false
-
   
+# Projects Section (Ongoing + Completed)
   - block: collection
     content:
-      title: Completed Projects
-      filters:
-        folders:
-          - completed
-    design:
-      view: card
-      columns: 3
-
-  - block: collection
-    content:
-      title: Ongoing Projects
+      title: Projects
       filters:
         folders:
           - ongoing
+          - completed
     design:
+      css_id: projects
       view: article-grid
       columns: 3
 ---

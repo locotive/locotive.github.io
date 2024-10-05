@@ -9,20 +9,16 @@ main:
     weight: 100
   - parent: BIO
     name: About Me
-    url: /
+    url: /#about-me
     weight: 110
   - parent: BIO
     name: Experience
-    url: experience/
+    url: /#experience
     weight: 120
   - parent: BIO
-    name: Ongoing Projects
-    url:  ongoing/
+    name: Projects
+    url: /#projects
     weight: 130
-  - parent: BIO
-    name: Completed Projects
-    url: completed/
-    weight: 140
 
   - name: Experience
     url: experience/
