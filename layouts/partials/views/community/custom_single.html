@@ -8,7 +8,7 @@
     {{ end }}
   </header>
 
-  {{ $resource := partial "modules/blox-tailwind/layouts/partials/functions/get_featured_image.html" $item }}
+  {{ $resource := partial "functions/get_featured_image.html" $item }}
   {{ with $resource }}
     <div class="project-image">
       {{ $image := .Resize "850x" }}
