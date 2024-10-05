@@ -104,5 +104,5 @@ sections:
           - ongoing
     design:
       view: article-grid
-      columns: 1
+      columns: 3
 ---

@@ -6,7 +6,16 @@ cms_exclude: true
 view: article-grid
 
 # Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+sections:
+  - block: collection
+    content:
+      title: Ongoing Projects
+      text: ''
+      filters:
+        folders:
+          - ongoing
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
 ---
