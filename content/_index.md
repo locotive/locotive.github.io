@@ -107,7 +107,7 @@ sections:
         folders:
           - completed
     design:
-      view: article-grid
+      view: date-title-summary
       columns: 3
 
   - block: collection

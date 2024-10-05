@@ -17,7 +17,7 @@ main:
     url: experience/computer/
     weight: 310
   - parent: Experience
-    name: Hobby
+    name: Skills & Hobby
     url: experience/hobby/
     weight: 320
   
