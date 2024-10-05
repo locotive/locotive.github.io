@@ -8,50 +8,50 @@ main:
     url: /
     weight: 100
   - parent: BIO
-    name: About Me
-    url: /#about-me
-    weight: 110
-  - parent: BIO
     name: Experience
     url: /#experience
-    weight: 120
+    weight: 110
   - parent: BIO
     name: Ongoing Projects
     url: /#ongoing_projects
-    weight: 130
+    weight: 120
   - parent: BIO
     name: Completed Projects
     url: /#completed_projects
-    weight: 140
+    weight: 130
+
+  - name: About Me
+    url: /about
+    weight: 200
 
   - name: Experience
     url: experience/
-    weight: 200
+    weight: 300
   - parent: Experience
     name: Computer
     url: experience/computer/
-    weight: 210
+    weight: 310
   - parent: Experience
     name: Hobby
     url: experience/hobby/
-    weight: 220
+    weight: 320
   
   - name: Studying
     url: teaching/
-    weight: 300
+    weight: 400
 
   - name: Projects
     url: project/
-    weight: 400
+    weight: 500
   - parent: Projects
     name: Ongoing Projects
     url: ongoing/
-    weight: 410
+    weight: 510
   - parent: Projects
     name: Completed Projects
     url: completed/
-    weight: 420
+    weight: 520
 
   - name: Contact
     url: contact/
-    weight: 500
+    weight: 600
