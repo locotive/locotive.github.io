@@ -91,10 +91,9 @@ sections:
       filters:
         folders:
           - ongoing
-        exclude_featured: false
     design:
       view: article-grid
-      columns: 1
+      columns: 3
 
   - block: collection
     content:
