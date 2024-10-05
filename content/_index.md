@@ -91,7 +91,7 @@ sections:
       title: Completed Projects
       filters:
         folders:
-          - project/completed/
+          - completed
     design:
       view: article-grid
       columns: 3
@@ -101,7 +101,7 @@ sections:
       title: Ongoing Projects
       filters:
         folders:
-          - project/ongoing/
+          - ongoing
     design:
       view: article-grid
       columns: 1

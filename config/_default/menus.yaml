@@ -17,11 +17,11 @@ main:
     weight: 120
   - parent: BIO
     name: Ongoing Projects
-    url:  project/ongoing/
+    url:  ongoing/
     weight: 130
   - parent: BIO
     name: Completed Projects
-    url: project/completed/
+    url: completed/
     weight: 140
 
   - name: Experience
@@ -45,11 +45,11 @@ main:
     weight: 400
   - parent: Projects
     name: Ongoing Projects
-    url: project/ongoing/
+    url: ongoing/
     weight: 410
   - parent: Projects
     name: Completed Projects
-    url: project/completed/
+    url: completed/
     weight: 420
 
   - name: Contact
