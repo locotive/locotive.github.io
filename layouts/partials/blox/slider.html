@@ -244,7 +244,7 @@
   const indicators = sliderCarousel.querySelectorAll('.carousel-indicators li');
   const autoplay = {{ $autoplay }};
   const interval = {{ $interval }};
-  let autoplayTimer = null;
+  let autoSlideInterval;
 
   function updateSlide(index) {
     slides.forEach(slide => slide.classList.remove('active'));
@@ -265,46 +265,37 @@
     updateSlide(prevIndex);
   }
 
-  function startAutoplay() {
+  function startAutoSlide() {
     if (autoplay) {
-      autoplayTimer = setInterval(nextSlide, interval);
+      autoSlideInterval = setInterval(nextSlide, interval);
     }
   }
 
-  function stopAutoplay() {
-    if (autoplayTimer) {
-      clearInterval(autoplayTimer);
-      autoplayTimer = null;
-    }
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
   }
 
   document.querySelector('.carousel-control-next').addEventListener('click', function() {
-    stopAutoplay(); // 수동으로 슬라이드를 이동할 때 자동 재생 중지
+    stopAutoSlide(); // 수동 조작 시 자동 슬라이드 중지
     nextSlide();
-    startAutoplay(); // 수동 조작 후 다시 자동 재생 시작
+    startAutoSlide(); // 다시 시작
   });
 
   document.querySelector('.carousel-control-prev').addEventListener('click', function() {
-    stopAutoplay(); // 수동으로 슬라이드를 이동할 때 자동 재생 중지
+    stopAutoSlide(); // 수동 조작 시 자동 슬라이드 중지
     prevSlide();
-    startAutoplay(); // 수동 조작 후 다시 자동 재생 시작
+    startAutoSlide(); // 다시 시작
   });
 
   indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', function() {
-      stopAutoplay(); // 수동으로 인디케이터 클릭 시 자동 재생 중지
+      stopAutoSlide(); // 수동으로 슬라이드 선택 시 자동 슬라이드 중지
       updateSlide(index);
-      startAutoplay(); // 수동 조작 후 다시 자동 재생 시작
+      startAutoSlide(); // 다시 시작
     });
   });
 
-  // 슬라이드 자동 재생 설정
-  if (autoplay) {
-    startAutoplay();
-  }
-
-  updateSlide(currentIndex);
+  startAutoSlide(); // 처음 로드 시 자동 슬라이드 시작
 });
-
 
 </script>
