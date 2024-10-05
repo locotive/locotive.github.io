@@ -3,6 +3,7 @@ title: Completed Projects
 cms_exclude: true
 
 design:
+  view: article-grid
   spacing: 6rem
   columns: 3
 
