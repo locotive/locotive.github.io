@@ -80,13 +80,7 @@ sections:
           interval: 5000
           show_arrows: true
           show_dots: true  
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      text: |-
-        I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
-    design:
-      columns: '1'
+
   - block: resume-experience
     content:
       username: admin
@@ -104,7 +98,7 @@ sections:
         folders:
           - completed
     design:
-      view: article-grid
+      view: citation
       columns: 3
 
   - block: collection

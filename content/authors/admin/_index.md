@@ -123,4 +123,5 @@ languages:
 
 ## About Me
 
-I am Nam Jaemin, a third-year Computer Science student at Jeonbuk National University. My areas of interest include Web Backend and Data Science
+I am Nam Jaemin, a third-year Computer Science student at Jeonbuk National University. My areas of interest include Web Backend and Data Science.
+And I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
