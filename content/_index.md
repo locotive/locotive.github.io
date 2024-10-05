@@ -98,7 +98,7 @@ sections:
         folders:
           - completed
     design:
-      view: citation
+      view: card
       columns: 3
 
   - block: collection
