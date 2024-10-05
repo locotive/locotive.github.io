@@ -59,4 +59,4 @@ features:
   privacy_pack:
     enable: false
 
-naverMapAPIKey: "63mEMzJVYMNahKTr8JPQhHyMFh5bhoaKhcALfwQi"
+naverMapAPIKey: <"63mEMzJVYMNahKTr8JPQhHyMFh5bhoaKhcALfwQi">
