@@ -91,17 +91,25 @@ sections:
       date_format: 'January 2006'
       is_education_first: false
   
-# Projects Section (Ongoing + Completed)
   - block: collection
     content:
-      title: Projects
+      title: ongoing Projects
       filters:
         folders:
           - ongoing
+    design:
+      css_id: projects
+      view: article-grid
+      columns: 4
+
+  - block: collection
+    content:
+      title: completed Projects
+      filters:
+        folders:
           - completed
     design:
       css_id: projects
       view: article-grid
-      columns: 3
-      pagination: false
+      columns: 4
 ---

@@ -16,9 +16,13 @@ main:
     url: /#experience
     weight: 120
   - parent: BIO
-    name: Projects
-    url: /#projects
+    name: Ongoing Projects
+    url: /#ongoing_projects
     weight: 130
+  - parent: BIO
+    name: Completed Projects
+    url: /#completed_projects
+    weight: 140
 
   - name: Experience
     url: experience/
