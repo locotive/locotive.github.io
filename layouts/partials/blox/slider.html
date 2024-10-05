@@ -13,14 +13,13 @@
   </ol>
   {{ end }}
 
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="height: {{ $slider_height }};">
     {{ range $index, $item := $block.content.slides }}
-
       {{ $style_bg := "" }}
       {{ $style_filter := "" }}
 
       {{ with $block.design.slide_height }}
-        {{ $style_bg = printf "%s height: %s;" $style_bg $slider_height }} <!-- 동적으로 높이를 설정 -->
+        {{ $style_bg = printf "%s height: %s;" $style_bg $slider_height }}
       {{ end }}
 
       {{ $bg := $item.background }}
@@ -32,19 +31,21 @@
         {{ $angle := string $bg.gradient_angle | default "90" }}
         {{ $style_bg = printf "%s background-image: linear-gradient(%sdeg, %s, %s);" $style_bg $angle $bg.gradient_start $bg.gradient_end }}
       {{ end }}
-        {{ if $bg.image.filename }}
-            {{ $bg_img := resources.Get (printf "media/%s" $bg.image.filename) }}
-            {{ if $bg_img }}
-                {{ $style_bg = printf "%s background-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s; opacity: 0.8;" $style_bg $bg_img.Permalink ($bg.image.position | default "center") ($bg.image.size | default "cover") }}
-            {{ else }}
-                {{ errorf "Could not locate `%s` in the `assets/media/` directory - please add it." $bg.image.filename }}
+
+      {{ if $bg.image.filename }}
+        {{ $bg_img := resources.Get (printf "media/%s" $bg.image.filename) }}
+        {{ if $bg_img }}
+          {{ $style_bg = printf "%s background-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s; opacity: 0.8;" $style_bg $bg_img.Permalink ($bg.image.position | default "center") ($bg.image.size | default "cover") }}
+        {{ else }}
+          {{ errorf "Could not locate `%s` in the `assets/media/` directory - please add it." $bg.image.filename }}
         {{ end }}
-        {{ with $bg.image.filters.brightness }}
-  {{ $style_filter = printf "%s -webkit-backdrop-filter: brightness(%s) contrast(1.2); backdrop-filter: brightness(%s) contrast(1.2);" $style_filter (string .) (string .) }}
-{{ end }}
       {{ end }}
 
-      <div class="carousel-item{{ if eq $index 0 }} active{{ end }} {{ with $block.design.is_fullscreen }}fullscreen{{ end }}" style="height: {{ $slider_height }} !important; text-align: center;">
+      {{ with $bg.image.filters.brightness }}
+        {{ $style_filter = printf "%s -webkit-backdrop-filter: brightness(%s) contrast(1.2); backdrop-filter: brightness(%s) contrast(1.2);" $style_filter (string .) (string .) }}
+      {{ end }}
+
+      <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="{{ $style_bg | safeCSS }} text-align: center; height: {{ $slider_height }};">
         <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }}">
           <div class="wg-hero dark container-fluid" style="margin: 0 6rem; text-align: {{ $item.align | default "center" }};">
             <h1 class="hero-title">
