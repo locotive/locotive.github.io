@@ -94,7 +94,7 @@ sections:
           - completed
     design:
       view: article-grid
-      columns: 2
+      columns: 3
 
   - block: collection
     content:
@@ -104,7 +104,7 @@ sections:
           - ongoing
     design:
       view: article-grid
-      columns: 3
+      columns: 1
 
   - block: collection
     id: news
