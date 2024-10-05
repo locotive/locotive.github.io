@@ -13,8 +13,24 @@ main:
     weight: 110
   - parent: BIO
     name: Experience
-    url: experience/
+    url: Experience/
     weight: 120
+  - parent: BIO
+    name: Ongoing Projects
+    url: projects/ongoing-projects/
+    weight: 130
+  - parent: BIO
+    name: Completed Projects
+    url: projects/completed-projects/
+    weight: 140
+  
+  - name: Studying
+    url: studying/
+    weight: 200
+
+  - name: Experience
+    url: experience/
+    weight: 300
   - parent: Experience
     name: Computer
     url: experience/computer/
@@ -23,29 +39,17 @@ main:
     name: Hobby
     url: experience/hobby/
     weight: 320
-  - parent: BIO
-    name: Ongoing Projects
-    url: ongoing/
-    weight: 130
-  - parent: BIO
-    name: Completed Projects
-    url: completed/
-    weight: 140
-  
-  - name: Studying
-    url: teaching/
-    weight: 200
 
   - name: Projects
-    url: project/
+    url: projects/
     weight: 400
   - parent: Projects
     name: Ongoing Projects
-    url: project/ongoing/
+    url: projects/ongoing-projects/
     weight: 410
   - parent: Projects
     name: Completed Projects
-    url: project/completed/
+    url: projects/completed-projects/
     weight: 420
 
   - name: Contact
