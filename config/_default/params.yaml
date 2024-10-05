@@ -58,3 +58,5 @@ features:
     enable: false
   privacy_pack:
     enable: false
+[params]
+  naverMapAPIKey = "63mEMzJVYMNahKTr8JPQhHyMFh5bhoaKhcALfwQi"
