@@ -1,19 +1,19 @@
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=li3eg7f02q"></script>
 <div class="shortcode shortcode--navermap">
-	<div id="map" style='width:{{ with .Get "width" }}{{.}}{{else}}500px{{end}}; height:{{ with .Get "height" }}{{.}}{{else}}300px{{end}}'>
-	</div>
+    <div id="map" style='width:{{ with .Get "width" }}{{.}}{{else}}500px{{end}}; height:{{ with .Get "height" }}{{.}}{{else}}300px{{end}}'>
+    </div>
 </div>
 <script id="code">
-//var map = new naver.maps.Map('map');
-var map = new naver.maps.Map('map', {
-    center: new naver.maps.LatLng(35.844360, 127.131318),
-    zoom: 15
-});
-map.setOptions({ //모든 지도 컨트롤 보이기
-            scaleControl: true,
-            logoControl: true,
-            mapDataControl: true,
-            zoomControl: true,
-            mapTypeControl: true
-        });
+    var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(35.844360, 127.131318),
+        zoom: 15 // 기본 줌 레벨 추가
+    });
+    
+    map.setOptions({ // 모든 지도 컨트롤 보이기
+        scaleControl: true,
+        logoControl: true,
+        mapDataControl: true,
+        zoomControl: true,
+        mapTypeControl: true
+    });
 </script>
