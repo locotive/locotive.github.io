@@ -1,5 +1,5 @@
 <div class="project-grid">
-  {{ range .Pages }}
+  {{ range where .Site.RegularPages "Section" "studding" }}
     {{ $item := . }}
     {{ $has_attachments := partial "functions/has_attachments" $item }}
     
@@ -20,14 +20,11 @@
       {{ $summary = $item.Summary }}
     {{ end }}
 
-    {{ $resource := partial "functions/get_featured_image.html" $item }}
-
+    {{ $image := $item.Params.image }}
     <div class="project-card">
       <div class="project-image">
-        {{ with $resource }}
-          {{ $image := .Resize "550x" }}
-          {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title }}" />
+        {{ if $image }}
+          <img src="{{ $item.RelPermalink }}{{ $image }}" alt="{{ $item.Title }}" style="width: 100%; height: auto;" />
         {{ end }}
       </div>
       <div class="project-details">

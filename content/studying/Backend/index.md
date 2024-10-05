@@ -9,9 +9,7 @@ math: false
 tags:
   - Backend
   - Web Development
-image:
-  filename: "featured.jpg"
-summary: "Backend study materials"
+image: "featured.jpg"
 ---
 
 ## Plan

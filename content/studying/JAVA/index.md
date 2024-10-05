@@ -9,9 +9,7 @@ math: false
 tags:
  - Java
  - Programming
-image:
-    filename: "featured.jpg"
-summary: "Study materials for mastering Java"
+image: "featured.jpg"
 ---
 
 ## Plan

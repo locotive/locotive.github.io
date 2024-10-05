@@ -9,9 +9,7 @@ math: false
 tags:
  - Operating Systems
  - Computer Science
-image:
-    filename: "featured.jpg"
-summary: "Study materials for mastering Operating Systems"
+image: "featured.jpg"
 ---
 
 ## Plan
