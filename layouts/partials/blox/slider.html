@@ -245,57 +245,74 @@
   const autoplay = {{ $autoplay }};
   const interval = {{ $interval }};
   let autoSlideInterval;
+  let slideTimeout;
 
+  // 슬라이드 업데이트
   function updateSlide(index) {
     slides.forEach(slide => slide.classList.remove('active'));
     indicators.forEach(indicator => indicator.classList.remove('active'));
 
     slides[index].classList.add('active');
     indicators[index].classList.add('active');
-    currentIndex = index;
+    currentIndex = index; // 현재 인덱스를 업데이트
   }
 
+  // 자동 슬라이드 재시작 함수
+  function startAutoSlide() {
+    // 자동 슬라이드를 시작할 때, 현재 인덱스 기준으로 설정
+    autoSlideInterval = setInterval(function() {
+      let nextIndex = (currentIndex + 1) % slides.length;
+      updateSlide(nextIndex);
+    }, interval);
+  }
+
+  // 자동 슬라이드 멈춤 함수
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval); // 기존의 자동 슬라이드를 멈춤
+  }
+
+  // 수동 슬라이드 시 자동 슬라이드 중지 및 일정 시간 후 재시작
+  function handleManualSlide() {
+    stopAutoSlide(); // 수동 조작 시 자동 슬라이드를 멈춤
+
+    // 일정 시간 후 자동 슬라이드를 재시작
+    clearTimeout(slideTimeout);
+    slideTimeout = setTimeout(startAutoSlide, 3000); // 3초 후 자동 슬라이드 재시작
+  }
+
+  // 다음 슬라이드로 이동
   function nextSlide() {
     let nextIndex = (currentIndex + 1) % slides.length;
     updateSlide(nextIndex);
+    handleManualSlide(); // 수동 슬라이드 처리
   }
 
+  // 이전 슬라이드로 이동
   function prevSlide() {
     let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
     updateSlide(prevIndex);
+    handleManualSlide(); // 수동 슬라이드 처리
   }
 
-  function startAutoSlide() {
-    if (autoplay) {
-      autoSlideInterval = setInterval(nextSlide, interval);
-    }
-  }
+  // 슬라이드 이동 버튼 이벤트
+  document.querySelector('.carousel-control-next').addEventListener('click', nextSlide);
+  document.querySelector('.carousel-control-prev').addEventListener('click', prevSlide);
 
-  function stopAutoSlide() {
-    clearInterval(autoSlideInterval);
-  }
-
-  document.querySelector('.carousel-control-next').addEventListener('click', function() {
-    stopAutoSlide(); // 수동 조작 시 자동 슬라이드 중지
-    nextSlide();
-    startAutoSlide(); // 다시 시작
-  });
-
-  document.querySelector('.carousel-control-prev').addEventListener('click', function() {
-    stopAutoSlide(); // 수동 조작 시 자동 슬라이드 중지
-    prevSlide();
-    startAutoSlide(); // 다시 시작
-  });
-
+  // 슬라이드 인디케이터 클릭 이벤트
   indicators.forEach((indicator, index) => {
     indicator.addEventListener('click', function() {
-      stopAutoSlide(); // 수동으로 슬라이드 선택 시 자동 슬라이드 중지
       updateSlide(index);
-      startAutoSlide(); // 다시 시작
+      handleManualSlide(); // 수동 슬라이드 처리
     });
   });
 
-  startAutoSlide(); // 처음 로드 시 자동 슬라이드 시작
+  // 자동 슬라이드 활성화
+  if (autoplay) {
+    startAutoSlide(); // 페이지 로드 시 자동 슬라이드 시작
+  }
+
+  updateSlide(currentIndex); // 슬라이드를 첫 번째로 초기화
 });
+
 
 </script>
