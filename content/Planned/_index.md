@@ -4,6 +4,7 @@ cms_exclude: true
 
 # View.
 view: article-grid
+columns: 3
 
 # Optional header image (relative to `static/media/` folder).
 sections:
@@ -17,5 +18,5 @@ sections:
     design:
       view: article-grid
       fill_image: false
-      columns: 15
+      
 ---
