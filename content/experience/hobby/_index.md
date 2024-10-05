@@ -20,4 +20,15 @@ sections:
     content:
       title: Languages
       username: admin
+  - block: resume-languages
+    content:
+      title: Programming Languages
+      username: admin
+      languages:
+        - name: "C++"
+          percent: 70
+        - name: "C"
+          percent: 70
+        - name: "JAVA"
+          percent: 40
 ---
