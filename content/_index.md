@@ -80,13 +80,13 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Experience
       filters:
         folders:
-          - publication
+          - Experience
         featured_only: true
     design:
-      view: article-grid
+      view: resume-experience
       columns: 2
   - block: collection
     content:
