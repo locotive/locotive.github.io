@@ -91,21 +91,21 @@ sections:
       text: ""
       filters:
         folders:
-          - project
+          - project/Ongoing Projects
         exclude_featured: false
     design:
       view: article-grid
-      columns: 2
+      columns: 3
 
   - block: collection
     content:
       title: Completed Projects
       filters:
         folders:
-          - project
+          - project\Completed Projects
     design:
       view: article-grid
-      columns: 2
+      columns: 3
 
   - block: collection
     id: news
