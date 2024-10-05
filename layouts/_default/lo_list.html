@@ -1,0 +1,66 @@
+<div class="project-grid">
+    {{ range .Pages }}
+      <div class="project-card">
+        <div class="project-image">
+          {{ with .Params.image }}
+            <img src="{{ .src }}" alt="{{ .alt }}" />
+          {{ end }}
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">{{ .Title }}</h3>
+          <p class="project-summary">{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="project-link">Read more</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+  
+  <style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    padding-top: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-summary {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  </style>
+  
