@@ -1,69 +1,23 @@
-<article class="single-project">
-  {{ $item := . }}
-  
-  <header class="project-header">
-    <h1 class="project-title">{{ $item.Title }}</h1>
-    {{ if $item.Params.date }}
-      <p class="project-date">{{ $item.Date.Format "January 2, 2006" }}</p>
+<div class="single-project">
+  <div class="project-image">
+    {{ with .Params.image }}
+      <img src="{{ .src }}" alt="{{ .alt }}" />
     {{ end }}
-  </header>
-
-  {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
-  {{ with $resource }}
-    <div class="project-image">
-      {{ $image := .Resize "850x" }}
-      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-      <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title }}" class="img-responsive" loading="lazy">
-    </div>
-  {{ end }}
-
-  <div class="project-content">
-    {{ if $item.Params.summary }}
-      <p class="project-summary">{{ $item.Params.summary | markdownify | emojify }}</p>
-    {{ end }}
-
-    <div class="project-body">
+  </div>
+  <div class="project-details">
+    <h1 class="project-title">{{ .Title }}</h1>
+    <p class="project-date">{{ .Date.Format "Jan 2, 2006" }}</p>
+    <div class="project-content">
       {{ .Content }}
     </div>
   </div>
-
-  {{ if $item.Params.tags }}
-    <div class="project-tags">
-      <p><strong>Tags:</strong> {{ range $item.Params.tags }}<span class="tag">{{ . }}</span> {{ end }}</p>
-    </div>
-  {{ end }}
-
-  {{ if $item.Params.external_link }}
-    <div class="project-link">
-      <a href="{{ $item.Params.external_link }}" target="_blank" rel="noopener" class="btn btn-primary">Visit Project</a>
-    </div>
-  {{ end }}
-</article>
+</div>
 
 <style>
 .single-project {
-  margin: 0 auto;
-  max-width: 850px;
-  padding: 2rem;
-}
-
-.project-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.project-title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-date {
-  font-size: 1rem;
-  color: #888;
-}
-
-.project-image {
-  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .project-image img {
@@ -72,45 +26,23 @@
   border-radius: 8px;
 }
 
+.project-details {
+  padding-top: 1rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-date {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
 .project-content {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.6;
-}
-
-.project-summary {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-  text-align: center;
-}
-
-.project-tags {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.tag {
-  background-color: #f0f0f0;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-}
-
-.project-link {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.project-link .btn {
-  background-color: #007bff;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.125rem;
-}
-
-.project-link .btn:hover {
-  background-color: #0056b3;
 }
 </style>
