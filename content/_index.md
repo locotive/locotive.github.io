@@ -98,7 +98,7 @@ sections:
           - progress
     design:
       view: article-grid
-      columns: 4
+      columns: 1
 
   - block: collection
     content:
@@ -108,7 +108,7 @@ sections:
           - completed
     design:
       view: article-grid
-      columns: 4
+      columns: 3
 
   - block: collection
     content:
@@ -118,5 +118,5 @@ sections:
           - planned
     design:
       view: article-grid
-      columns: 4
+      columns: 3
 ---
