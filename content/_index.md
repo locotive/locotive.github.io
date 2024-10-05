@@ -86,7 +86,7 @@ sections:
           - Experience
         featured_only: true
     design:
-      view: resume-experience
+      view: list
       columns: 2
   - block: collection
     content:
