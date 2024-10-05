@@ -1,7 +1,7 @@
 ---
 title: Backend Study Guide
 summary: Backend study materials
-date: 2023-10-06
+date: 2023-10-24
 type: docs
 math: false
 tags:
