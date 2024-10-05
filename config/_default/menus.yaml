@@ -7,37 +7,52 @@ main:
   - name: BIO
     url: /
     weight: 10
-    submenu:
-      - name: About Me
-        url: /#about-me
-      - name: Slider
-        url: /#slider
-      - name: Experience
-        url: /#experience
-      - name: Ongoing Projects
-        url: /#ongoing-projects
-      - name: Completed Projects
-        url: /#completed-projects
+  -parent: BIO
+    - name: About Me
+      url: /#about-me
+      weight: 11
+  -parent: BIO
+    - name: Experience
+      url: /#experience
+      weight: 12
+  -parent: BIO
+    - name: Ongoing Projects
+      url: /#ongoing-projects
+      weight: 13
+  -parent: BIO
+    - name: Completed Projects
+      url: /#completed-projects
+      weight: 14
+  
   - name: Studying
     url: /#studying
-    weight: 15
+    weight: 20
+
   - name: Experience
     url: experience/
-    weight: 20
-    submenu:
-      - name: Experience
-        url: /#experience
-      - name: Hobby
-        url: /#hobby
+    weight: 30
+  -parent: Experience
+    - name: Computer
+      url: /#experience
+      weight: 31
+  -parent: Experience
+    - name: Hobby
+      url: /#hobby
+      weight: 32
+
   - name: Projects
     url: projects/
-    weight: 30
-    submenu:
-      - name: Ongoing Projects
-        url: /#ongoing-projects
-      - name: Completed Projects
-        url: /#completed-projects
+    weight: 40
+  -parent: Projects
+    - name: Ongoing Projects
+      url: /#ongoing-projects
+      weight: 41
+  -parent: Projects
+    - name: Completed Projects
+      url: /#completed-projects
+      weight: 42
+
   - name: Contact
     url: contact/
-    weight: 40
+    weight: 50
 
