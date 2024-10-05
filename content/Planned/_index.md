@@ -13,7 +13,7 @@ sections:
       text: ''
       filters:
         folders:
-          - Planned
+          - planned
     design:
       view: article-grid
       fill_image: false

@@ -13,7 +13,7 @@ sections:
       text: ''
       filters:
         folders:
-          - In-Progress
+          - progress
     design:
       view: article-grid
       fill_image: false

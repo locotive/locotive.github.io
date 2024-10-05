@@ -95,7 +95,7 @@ sections:
       title: In Progress Projects
       filters:
         folders:
-          - In-Progress
+          - progress
     design:
       view: article-grid
       columns: 4
@@ -106,6 +106,16 @@ sections:
       filters:
         folders:
           - completed
+    design:
+      view: article-grid
+      columns: 4
+
+  - block: collection
+    content:
+      title: planned Projects
+      filters:
+        folders:
+          - planned
     design:
       view: article-grid
       columns: 4
