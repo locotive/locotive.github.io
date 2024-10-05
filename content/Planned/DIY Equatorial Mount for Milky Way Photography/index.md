@@ -1,11 +1,17 @@
 ---
 title: DIY Equatorial Mount for Milky Way Photography
 
+authors:
+  - admin
+  
 tags:
   - Precision star tracking to capture long-exposure astrophotography.
   - Stepper motor-driven with microcontroller-based control.
   - Adjustable speed to match Earth’s rotation for different focal lengths.
   - Ideal for capturing clear images of the Milky Way without star trails.
+
+share: false
+featured: true
 ---
 
 This project involves building a custom equatorial mount, which is essential for capturing long-exposure shots of the Milky Way and other celestial objects. An equatorial mount helps to counteract the Earth's rotation, allowing the camera to track stars precisely and avoid star trails in long exposures. This is particularly crucial for astrophotographers aiming to capture the night sky with clarity and detail.
