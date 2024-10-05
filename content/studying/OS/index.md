@@ -9,7 +9,8 @@ math: false
 tags:
  - Operating Systems
  - Computer Science
-image: "featured.jpg"
+image:
+    filename: "featured.jpg"
 ---
 
 ## Plan

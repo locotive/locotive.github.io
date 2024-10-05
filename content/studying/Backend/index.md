@@ -9,7 +9,8 @@ math: false
 tags:
   - Backend
   - Web Development
-image: "featured.jpg"
+image:
+  filename: "featured.jpg"
 ---
 
 ## Plan

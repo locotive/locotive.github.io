@@ -1,5 +1,5 @@
 <div class="project-grid">
-  {{ range where .Site.RegularPages "Type" "docs" }}
+  {{ range where .Site.RegularPages "Section" "studying" }}
     {{ $item := . }}
     {{ $has_attachments := partial "functions/has_attachments" $item }}
     
@@ -24,7 +24,7 @@
     <div class="project-card">
       <div class="project-image">
         {{ if $image }}
-          <img src="{{ $item.RelPermalink }}{{ $image }}" alt="{{ $item.Title }}" style="width: 100%; height: auto;" />
+          <img src="{{ $image }}" alt="{{ $item.Title }}" style="width: 100%; height: auto;" />
         {{ end }}
       </div>
       <div class="project-details">
