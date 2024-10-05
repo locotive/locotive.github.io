@@ -1,5 +1,5 @@
 ---
-title: Completed-Projects
+title: Completed Projects
 cms_exclude: true
 
 # View.

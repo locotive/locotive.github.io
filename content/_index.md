@@ -88,10 +88,9 @@ sections:
   - block: collection
     content:
       title: Ongoing Projects
-      text: ""
       filters:
         folders:
-          - Ongoing
+          - ongoing
         exclude_featured: false
     design:
       view: article-grid
@@ -102,7 +101,7 @@ sections:
       title: Completed Projects
       filters:
         folders:
-          - Completed
+          - completed
     design:
       view: article-grid
       columns: 3
