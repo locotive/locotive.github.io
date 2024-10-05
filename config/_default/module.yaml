@@ -21,11 +21,8 @@ mounts:
   - source: hugo-blox/blox
     target: assets/dist/community/blox/
     includeFiles: '**.css'
-  - source: blox-bootstrap/layouts/partials/blocks  # 추가
-    target: layouts/partials/blocks  # `slider.html` 위치 경로
-    includeFiles: 'slider.html'
   # blox-bootstrap의 contact.html 추가
-  - source: blox-bootstrap/layouts/partials/blocks  # 수정
+  - source: HugoBlox/hugo-blox-builder/tree/main/modules/blox-bootstrap/layouts/partials/blocks  # 수정
     target: layouts/partials/blocks
     includeFiles: 'slider.html, contact.html'  # contact.html 추가  
   - source: layouts
