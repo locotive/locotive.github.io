@@ -1,6 +1,6 @@
 ---
 title: Completed Projects
-cms_exclude: true
+type: landing
 
 view: article-grid
 

@@ -1,6 +1,6 @@
 ---
 title: In Progress Projects
-cms_exclude: true
+type: landing
 
 view: article-grid
 

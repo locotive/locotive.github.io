@@ -1,8 +1,6 @@
 ---
 title: Planned Projects
-cms_exclude: true
-
-view: article-grid
+type: landing
 
 # Optional header image (relative to `static/media/` folder).
 sections:
