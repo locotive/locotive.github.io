@@ -146,6 +146,7 @@
     align-items: center;
     background-color: #ddd;
     font-size: 2rem;
+    transition: transform 0.6s ease;
   }
 
   .carousel-control-prev,
@@ -295,8 +296,11 @@
   }
 
   // 슬라이드 이동 버튼 이벤트
-  document.querySelector('.carousel-control-next').addEventListener('click', nextSlide);
-  document.querySelector('.carousel-control-prev').addEventListener('click', prevSlide);
+  document.querySelector('.carousel-control-next').addEventListener('click', function() {
+  setTimeout(nextSlide, 600); // 0.6초 딜레이 추가
+});
+document.querySelector('.carousel-control-prev').addEventListener('click', function() {
+  setTimeout(prevSlide, 600); // 0.6초 딜레이 추가
 
   // 슬라이드 인디케이터 클릭 이벤트
   indicators.forEach((indicator, index) => {
