@@ -97,7 +97,7 @@ sections:
         folders:
           - studying
     design:
-      view: card
+      view: list
       columns: 3
 
   - block: collection
@@ -107,7 +107,7 @@ sections:
         folders:
           - progress
     design:
-      view: article-grid
+      view: single
       columns: 1
 
   - block: collection
