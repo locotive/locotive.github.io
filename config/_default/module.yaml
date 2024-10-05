@@ -22,7 +22,7 @@ mounts:
     target: assets/dist/community/blox/
     includeFiles: '**.css'
   # blox-bootstrap의 contact.html 추가
-  - source: HugoBlox/hugo-blox-builder/tree/main/modules/blox-bootstrap/layouts/partials/blocks  # 수정
+  - source: modules/blox-bootstrap/layouts/partials/blocks  # 수정
     target: layouts/partials/blocks
     includeFiles: 'slider.html, contact.html'  # contact.html 추가  
   - source: layouts
