@@ -8,6 +8,7 @@ imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms
+  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap  # 추가
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
@@ -23,6 +24,10 @@ mounts:
   - source: modules/blox-bootstrap/layouts/partials/blocks  # 추가
     target: layouts/partials/blocks  # `slider.html` 위치 경로
     includeFiles: 'slider.html'
+  # blox-bootstrap의 contact.html 추가
+  - source: modules/blox-bootstrap/layouts/partials/blocks  # 수정
+    target: layouts/partials/blocks
+    includeFiles: 'slider.html, contact.html'  # contact.html 추가  
   - source: layouts
     target: layouts
   - source: assets
