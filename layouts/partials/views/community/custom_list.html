@@ -1,21 +1,21 @@
 <div class="custom-list-grid">
-  {{ range .item }}
-  {{ $item := .item }}
-  {{ $has_attachments := partial "functions/has_attachments" $item }}
+  {{ range .pages }}
+  {{ $pages := .pages }}
+  {{ $has_attachments := partial "functions/has_attachments" $pages }}
 
     {{/* 링크 설정 */}}
-    {{ $link := $item.RelPermalink }}
+    {{ $link := $pages.RelPermalink }}
 
     {{/* 요약 설정 */}}
     {{ $summary := "" }}
-    {{ if $item.Params.summary }}
-      {{ $summary = $item.Params.summary | markdownify | emojify }}
-    {{ else if $item.Summary }}
-      {{ $summary = $item.Summary }}
+    {{ if $pages.Params.summary }}
+      {{ $summary = $pages.Params.summary | markdownify | emojify }}
+    {{ else if $pages.Summary }}
+      {{ $summary = $pages.Summary }}
     {{ end }}
 
     {{/* 대표 이미지 설정 */}}
-    {{ $resource := $item.Params.image }}
+    {{ $resource := $pages.Params.image }}
     {{ if $resource }}
       {{ $resource = $resource.filename }}
     {{ end }}
@@ -24,13 +24,13 @@
       <!-- 이미지 출력 -->
       {{ if $resource }}
         <div class="custom-image">
-          <img src="{{ $resource | relURL }}" alt="{{ $item.Title }}" />
+          <img src="{{ $resource | relURL }}" alt="{{ $pages.Title }}" />
         </div>
       {{ end }}
       
       <!-- 제목과 요약 출력 -->
       <div class="custom-details">
-        <h3 class="custom-title">{{ $item.Title }}</h3>
+        <h3 class="custom-title">{{ $pages.Title }}</h3>
         <p class="custom-summary">{{ $summary }}</p>
         <a href="{{ $link }}" class="custom-link">Read more</a>
       </div>
@@ -38,10 +38,10 @@
   {{ end }}
 </div>
 
-{{ range .item }}
+{{ range .pages }}
   <p>{{ .Title }}</p>
 {{ else }}
-  <p>No item found.</p>
+  <p>No pages found.</p>
 {{ end }}
 
 <!-- 스타일 적용 -->
