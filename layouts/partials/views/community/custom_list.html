@@ -37,11 +37,7 @@
   {{ end }}
 </div>
 
-{{ range .Pages }}
-  <p>{{ .Title }}</p>
-{{ else }}
-  <p>No pages found.</p>
-{{ end }}
+<pre>{{ . | jsonify }}</pre>
 
 <!-- 스타일 적용 -->
 <style>
