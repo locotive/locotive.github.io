@@ -105,9 +105,9 @@ sections:
       title: In Progress Projects
       filters:
         folders:
-          - views/progress/Personal-page
+          - progress/Personal-page
     design:
-      view: community/custom_single
+      view: views/community/custom_single
       columns: '1'
 
   - block: collection
