@@ -1,5 +1,5 @@
 <div class="project-grid">
-  {{ range .Pages }}
+  {{ range .Docs }}
     {{ $item := . }}
     {{ $has_attachments := partial "functions/has_attachments" $item }}
     
