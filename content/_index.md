@@ -76,16 +76,11 @@ sections:
         I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
     design:
       columns: '1'
-  - block: resume-experience
+  - block: collection
     content:
-      username: admin
-    design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
-      is_education_first: false
+      filters:
+        - experience
 
-  
   - block: collection
     content:
       title: Completed Projects
