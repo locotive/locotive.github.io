@@ -95,9 +95,7 @@ sections:
       title: Now Studying
       filters:
         folders:
-          - studying/os
-          - studying/backend
-          - studying/java
+          - studying
     design:
       view: list
       columns: '3'
