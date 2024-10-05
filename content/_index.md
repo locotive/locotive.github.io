@@ -91,9 +91,7 @@ sections:
       text: ""
       filters:
         folders:
-          - project
-        custom_fields:
-          categories: ongoing
+          - "project/Ongoing Projects"
         exclude_featured: false
     design:
       view: article-grid
@@ -104,9 +102,7 @@ sections:
       title: Completed Projects
       filters:
         folders:
-          - project
-        custom_fields:
-          categories: completed
+          - "project/Completed Projects"
     design:
       view: article-grid
       columns: 3
