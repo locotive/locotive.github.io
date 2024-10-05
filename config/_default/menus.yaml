@@ -29,12 +29,16 @@ main:
     url: project/
     weight: 500
   - parent: Projects
-    name: Ongoing Projects
-    url: ongoing/
+    name: In Progress Projects
+    url: In-Progress/
     weight: 510
   - parent: Projects
     name: Completed Projects
     url: completed/
+    weight: 520
+  - parent: Projects
+    name: Planned Projects
+    url: Planned/
     weight: 520
 
   - name: Contact

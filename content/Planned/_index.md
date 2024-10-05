@@ -1,5 +1,5 @@
 ---
-title: In Progress Projects
+title: Planned Projects
 cms_exclude: true
 
 # View.
@@ -9,11 +9,11 @@ view: article-grid
 sections:
   - block: collection
     content:
-      title: In Progress Projects
+      title: Planned Projects
       text: ''
       filters:
         folders:
-          - In-Progress
+          - Planned
     design:
       view: article-grid
       fill_image: false

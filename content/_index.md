@@ -87,18 +87,16 @@ sections:
     content:
       username: admin
     design:
-      css_id: experience
       date_format: 'January 2006'
       is_education_first: false
   
   - block: collection
     content:
-      title: ongoing Projects
+      title: In Progress Projects
       filters:
         folders:
-          - ongoing
+          - In-Progress
     design:
-      css_id: projects
       view: article-grid
       columns: 4
 
@@ -109,7 +107,6 @@ sections:
         folders:
           - completed
     design:
-      css_id: projects
       view: article-grid
       columns: 4
 ---
