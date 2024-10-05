@@ -77,8 +77,8 @@ sections:
         I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
     design:
       columns: '1'
-  - block: collection
-    id: papers
+  - block: markdown
+    id: experience
     content:
       title: Experience
       filters:
@@ -86,7 +86,7 @@ sections:
           - Experience
         featured_only: true
     design:
-      view: list
+      view: article-grid
       columns: 2
   - block: collection
     content:
