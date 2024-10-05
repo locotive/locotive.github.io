@@ -1,4 +1,5 @@
 <div class="custom-list-grid">
+  {{ range .item }}
   {{ $item := .item }}
   {{ $has_attachments := partial "functions/has_attachments" $item }}
 
