@@ -2,7 +2,7 @@
 title: Java Study Guide
 summary: Study materials focused on mastering Java
 date: 2024-09-01
-author:
+authors:
     - admin
 type: docs
 math: false
