@@ -65,8 +65,8 @@ sections:
             color: '#000'
             size: cover
       design:
+        height: 800px
         slider:
-          height: 800px
           autoplay: true
           interval: 5000
           show_arrows: true
