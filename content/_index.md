@@ -30,6 +30,17 @@ sections:
   - block: slider
     content:
       slides:
+        - title: "<span style='font-size:70%'>club</span>"
+          content: "<span style='font-size:70%'>동아리</span>"
+          align: center
+          background:
+            image:
+              filename: JBNU.jpg
+              filters:
+                brightness: 0.4
+            position: center
+            color: '#000'
+            size: cover
         - title: "<span style='font-size:70%'>Javice</span>"
           content: "<span style='font-size:70%'>웹 스터디</span>"
           align: center
@@ -76,11 +87,14 @@ sections:
         I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
     design:
       columns: '1'
-  - block: collection
+  - block: resume-experience
     content:
-      filters:
-        folders:
-          - experience
+      username: admin
+    design:
+      # Hugo date format
+      date_format: 'January 2006'
+      # Education or Experience section first?
+      is_education_first: false
 
   
   - block: collection
