@@ -1,77 +1,61 @@
 {{ $item := .item }}
+{{ $data := dict "item" $item "summary" ($item.Params.summary | default $item.Summary) "image" $item.Params.image "authors" $item.Params.authors }}
 
-{{/* Dynamic view adjusts to content type. */}}
-{{ $icon_pack := "far" }}
-{{ $icon := "fa-file-alt" }}
-{{ $show_authors := false }}
 {{ $link := $item.RelPermalink }}
 {{ $target := "" }}
 {{ if $item.Params.external_link }}
   {{ $link = $item.Params.external_link }}
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
-{{ if eq $item.Type "post" }}
-  {{ $icon = "fa-newspaper" }}
-{{ else if eq $item.Type "event" }}
-  {{ $icon = "fa-calendar-alt" }}
-{{ else if eq $item.Type "publication" }}
-  {{ $show_authors = true }}
-{{ else if eq $item.Type "project" }}
-  {{ $icon_pack = "fas" }}
-  {{ $icon = "fa-project-diagram" }}
-  {{ $show_authors = true }}
-{{ end }}
-
-{{ $has_attachments := partial "functions/has_attachments" $item }}
-
-{{ $summary := "" }}
-{{ if $item.Params.summary }}
-  {{ $summary = $item.Params.summary | markdownify | emojify }}
-{{ else if $item.Summary }}
-  {{ $summary = $item.Summary }}
-{{ end }}
 
 <div class="custom-list-grid">
   <div class="custom-card">
-    <!-- 아이콘 출력 -->
-    <i class="{{ $icon_pack }} {{ $icon }} pub-icon" aria-hidden="true"></i>
     
+    <!-- 아이콘 출력 -->
+    {{ $icon_pack := "far" }}
+    {{ $icon := "fa-file-alt" }}
+    {{ if eq $item.Type "post" }}
+      {{ $icon = "fa-newspaper" }}
+    {{ else if eq $item.Type "event" }}
+      {{ $icon = "fa-calendar-alt" }}
+    {{ else if eq $item.Type "publication" }}
+      {{ $icon_pack = "fas" }}
+      {{ $icon = "fa-project-diagram" }}
+    {{ end }}
+    <i class="{{ $icon_pack }} {{ $icon }} pub-icon" aria-hidden="true"></i>
+
     <!-- 이미지 출력 -->
-    {{ $resource := $item.Params.image }}
-    {{ if $resource }}
+    {{ if $data.image }}
       <div class="custom-image">
-        <img src="{{ $resource | relURL }}" alt="{{ $item.Title }}" />
+        <img src="{{ $data.image | relURL }}" alt="{{ $item.Title }}" />
+      </div>
+    {{ else }}
+      <!-- 이미지가 없을 때 기본 이미지 제공 -->
+      <div class="custom-image">
+        <img src="/path/to/default/image.jpg" alt="Default Image" />
       </div>
     {{ end }}
 
     <!-- 제목과 요약 출력 -->
     <div class="custom-details">
       <h3 class="custom-title">{{ $item.Title }}</h3>
-      <p class="custom-summary">{{ $summary }}</p>
+      {{ if $data.summary }}
+        <p class="custom-summary">{{ $data.summary | plainify }}</p>
+      {{ else }}
+        <p class="custom-summary">No summary available.</p>
+      {{ end }}
       <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-link">Read more</a>
     </div>
 
     <!-- 저자 정보 출력 -->
-    {{ if and $show_authors $item.Params.authors }}
+    {{ if and $item.Type "publication" $data.authors }}
       <div class="article-metadata">
-        {{ partial "page_metadata_authors" $item }}
+        <span>By: {{ range $author := $data.authors }}{{ $author }}{{ end }}</span>
       </div>
     {{ end }}
 
-    <!-- 첨부 파일 존재 체크 -->
-    {{ if $has_attachments }}
-      <div class="btn-links">
-        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
-      </div>
-    {{ end }}
   </div>
 </div>
-
-{{ range .item }}
-  <p>{{ .Title }}</p>
-{{ else }}
-  <p>No item found.</p>
-{{ end }}
 
 <!-- 스타일 적용 -->
 <style>
