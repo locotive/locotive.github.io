@@ -45,7 +45,7 @@
 
       <div class="carousel-item{{ if eq $index 0 }} active{{ end }} {{ with $block.design.is_fullscreen }}fullscreen{{ end }}" style="{{ $style_bg | safeCSS }} text-align: center;">
         <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }}">
-          <div class="wg-hero dark container" style="margin: 0 6rem; text-align: {{ $item.align | default "center" }};">
+          <div class="wg-hero dark container-fluid" style="margin: 0 6rem; text-align: {{ $item.align | default "center" }};">
             <h1 class="hero-title">
               {{ with $item.title }}{{ . | markdownify | emojify }}{{ end }}
             </h1>
