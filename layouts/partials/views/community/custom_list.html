@@ -1,5 +1,5 @@
 <div class="project-grid">
-  {{ range where .Site.RegularPages "Section" "studding" }}
+  {{ range where .Site.RegularPages "Type" "docs" }}
     {{ $item := . }}
     {{ $has_attachments := partial "functions/has_attachments" $item }}
     
