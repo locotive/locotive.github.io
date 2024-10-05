@@ -1,4 +1,4 @@
-{{ $pages := where .Site.RegularPages "type" "docs" }}
+{{ $pages := where .Site.RegularPages "Type" "docs" }}
 {{ if $pages }}
   <div class="project-grid">
     {{ range $pages }}
