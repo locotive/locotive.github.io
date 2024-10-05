@@ -25,22 +25,39 @@
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
 <div class="custom-list-grid">
-    <div class="custom-card">
-      <!-- 이미지 출력 -->
-      {{ if $resource }}
-        <div class="custom-image">
-          <img src="{{ $resource | relURL }}" alt="{{ $item.Title }}" />
-        </div>
-      {{ end }}
-      
-      <!-- 제목과 요약 출력 -->
-      <div class="custom-details">
-        <h3 class="custom-title">{{ $item.Title }}</h3>
-        <p class="custom-summary">{{ $summary }}</p>
-        <a href="{{ $link }}" class="custom-link">Read more</a>
+  <div class="custom-card">
+    <!-- 아이콘 출력 -->
+    <i class="{{ $icon_pack }} {{ $icon }} pub-icon" aria-hidden="true"></i>
+    
+    <!-- 이미지 출력 -->
+    {{ $resource := $item.Params.image }}
+    {{ if $resource }}
+      <div class="custom-image">
+        <img src="{{ $resource | relURL }}" alt="{{ $item.Title }}" />
       </div>
+    {{ end }}
+
+    <!-- 제목과 요약 출력 -->
+    <div class="custom-details">
+      <h3 class="custom-title">{{ $item.Title }}</h3>
+      <p class="custom-summary">{{ $summary }}</p>
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-link">Read more</a>
     </div>
-  {{ end }}
+
+    <!-- 저자 정보 출력 -->
+    {{ if and $show_authors $item.Params.authors }}
+      <div class="article-metadata">
+        {{ partial "page_metadata_authors" $item }}
+      </div>
+    {{ end }}
+
+    <!-- 첨부 파일 존재 체크 -->
+    {{ if $has_attachments }}
+      <div class="btn-links">
+        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+      </div>
+    {{ end }}
+  </div>
 </div>
 
 <!-- 스타일 적용 -->
