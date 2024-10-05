@@ -4,11 +4,6 @@
 
     {{/* 링크 설정 */}}
     {{ $link := $page.RelPermalink }}
-    {{ $target := "" }}
-    {{ if $page.Params.external_link }}
-      {{ $link = $page.Params.external_link }}
-      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-    {{ end }}
 
     {{/* 요약 설정 */}}
     {{ $summary := "" }}
@@ -36,11 +31,13 @@
       <div class="custom-details">
         <h3 class="custom-title">{{ $page.Title }}</h3>
         <p class="custom-summary">{{ $summary }}</p>
-        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-link">Read more</a>
+        <a href="{{ $link }}" class="custom-link">Read more</a>
       </div>
     </div>
   {{ end }}
 </div>
+
+{{ "<p>Debug: Custom List Loaded</p>" | safeHTML }}
 
 <!-- 스타일 적용 -->
 <style>
