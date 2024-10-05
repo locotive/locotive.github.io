@@ -2,10 +2,10 @@
 title: Completed Projects
 cms_exclude: true
 
-design:
-  view: article-grid
-  spacing: 6rem
-  columns: 3
+view: article-grid
+  design:
+    spacing: 6rem
+    columns: 3
 
 # Optional header image (relative to `static/media/` folder).
 sections:

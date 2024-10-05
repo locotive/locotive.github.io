@@ -2,9 +2,11 @@
 title: Planned Projects
 cms_exclude: true
 
-design:
-  spacing: 6rem
-  columns: 3
+view: article-grid
+  design:
+    spacing: 6rem
+    columns: 3
+  
 
 # Optional header image (relative to `static/media/` folder).
 sections:
@@ -18,5 +20,4 @@ sections:
     design:
       view: article-grid
       fill_image: false
-      
 ---
