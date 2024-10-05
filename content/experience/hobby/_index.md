@@ -35,7 +35,6 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-      
         - title: "<span style="font-size:90%">Chess</span>
           content: <span style="font-size:90%">Improvement in concentration and quick decision-making.<span style="font-size:90%">
           align: center
@@ -46,7 +45,6 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-
         - title: "<span style='font-size:90%'>LoLchess</span>"
           content: "<span style='font-size:90%'>Improvement in concentration and quick decision-making.</span style="font-size:90%">"
           align: center
@@ -57,7 +55,6 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-
         - title: "<span style='font-size:90%'>Listening to music</span>"
           content: "<span style='font-size:90%'>I do a lot of coding work while listening to music.</span>"
           align: center
@@ -68,7 +65,6 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-
         - title: "<span style='font-size:90%'>Photography</span>"
           content: "<span style='font-size:90%'>Exploring different perspectives</span>"
           align: center
@@ -79,7 +75,6 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-
       design:
         slider:
           autoplay: true
