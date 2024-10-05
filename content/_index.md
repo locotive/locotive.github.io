@@ -85,22 +85,23 @@ sections:
       # Education or Experience section first?
       is_education_first: false
 
-  - block: collection
-    content:
-      title: Ongoing Projects
-      filters:
-        folders:
-          - ongoing
-    design:
-      view: article-grid
-      columns: 3
-
+  
   - block: collection
     content:
       title: Completed Projects
       filters:
         folders:
           - completed
+    design:
+      view: article-grid
+      columns: 3
+      
+  - block: collection
+    content:
+      title: Ongoing Projects
+      filters:
+        folders:
+          - ongoing
     design:
       view: article-grid
       columns: 3
