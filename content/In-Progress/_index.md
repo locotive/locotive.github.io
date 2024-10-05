@@ -1,5 +1,5 @@
 ---
-title: Ongoing Projects
+title: In-Progress Projects
 cms_exclude: true
 
 # View.
@@ -9,11 +9,11 @@ view: article-grid
 sections:
   - block: collection
     content:
-      title: Ongoing Projects
+      title: In-Progress Projects
       text: ''
       filters:
         folders:
-          - ongoing
+          - In-Progress
     design:
       view: article-grid
       fill_image: false

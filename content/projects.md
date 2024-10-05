@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 type: page
----
+
 
 - block: collection
   content:
@@ -15,10 +15,11 @@ type: page
 
 - block: collection
   content:
-    title: Ongoing Projects
+    title: In-Progress Projects
     filters:
       folders:
-        - ongoing
+        - In-Progress
     design:
       view: article-grid
       columns: 3
+---
