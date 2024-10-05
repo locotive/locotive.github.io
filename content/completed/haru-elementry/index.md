@@ -1,7 +1,6 @@
 ---
 title: haru-elementry
 date: 2024-05-28
-external_link: https://github.com/TaeYunAhn/haru_elementry
 tags:
   - AndroidDevelopment
   - Award

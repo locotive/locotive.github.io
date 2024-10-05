@@ -1,7 +1,6 @@
 ---
 title: Personal-Web-Page
 date: 2024-09-28
-external_link: https://github.com/locotive/locotive.github.io
 tags:
   - hugo
   - WebDevelopment  

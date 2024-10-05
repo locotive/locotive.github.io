@@ -1,7 +1,6 @@
 ---
 title: E-mail-services
 date: 2022-07-11
-external_link: https://github.com/locotive/Email_Service
 tags:
   - first-project
   - c++
