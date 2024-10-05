@@ -13,15 +13,15 @@ main:
     weight: 110
   - parent: BIO
     name: Experience
-    url: Experience/
+    url: experience/
     weight: 120
   - parent: BIO
     name: Ongoing Projects
-    url: projects/ongoing-projects/
+    url: project/ongoing-projects/
     weight: 130
   - parent: BIO
     name: Completed Projects
-    url: projects/completed-projects/
+    url: project/completed-projects/
     weight: 140
   
   - name: Studying
@@ -41,15 +41,15 @@ main:
     weight: 320
 
   - name: Projects
-    url: projects/
+    url: project/
     weight: 400
   - parent: Projects
     name: Ongoing Projects
-    url: projects/ongoing-projects/
+    url: project/ongoing-projects/
     weight: 410
   - parent: Projects
     name: Completed Projects
-    url: projects/completed-projects/
+    url: project/completed-projects/
     weight: 420
 
   - name: Contact
