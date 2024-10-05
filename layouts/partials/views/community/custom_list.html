@@ -37,7 +37,11 @@
   {{ end }}
 </div>
 
-{{ "<p>Debug: Custom List Loaded</p>" | safeHTML }}
+{{ range .Pages }}
+  <p>{{ .Title }}</p>
+{{ else }}
+  <p>No pages found.</p>
+{{ end }}
 
 <!-- 스타일 적용 -->
 <style>
