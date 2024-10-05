@@ -91,7 +91,7 @@ sections:
       text: ""
       filters:
         folders:
-          - "project/Completed Projects"
+          - project
         exclude_featured: false
     design:
       view: article-grid
@@ -102,7 +102,7 @@ sections:
       title: Completed Projects
       filters:
         folders:
-          - "project/Completed Projects"
+          - Completed Projects
     design:
       view: article-grid
       columns: 3
