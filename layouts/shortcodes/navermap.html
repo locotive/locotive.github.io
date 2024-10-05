@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=63mEMzJVYMNahKTr8JPQhHyMFh5bhoaKhcALfwQi"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=li3eg7f02q"></script>
 <div class="shortcode shortcode--navermap">
 	<div id="map" style='width:{{ with .Get "width" }}{{.}}{{else}}500px{{end}}; height:{{ with .Get "height" }}{{.}}{{else}}300px{{end}}'>
 	</div>
@@ -6,7 +6,8 @@
 <script id="code">
 //var map = new naver.maps.Map('map');
 var map = new naver.maps.Map('map', {
-    center: new naver.maps.LatLng(35.844360, 127.131318)
+    center: new naver.maps.LatLng(35.844360, 127.131318),
+    zoom: 10
 });
 map.setOptions({ //모든 지도 컨트롤 보이기
             scaleControl: true,
