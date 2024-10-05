@@ -1,25 +1,25 @@
+{{ range .pages }}
+{{ $pages := .pages }}
+{{ $has_attachments := partial "functions/has_attachments" $pages }}
+
+  {{/* 링크 설정 */}}
+  {{ $link := $pages.RelPermalink }}
+
+  {{/* 요약 설정 */}}
+  {{ $summary := "" }}
+  {{ if $pages.Params.summary }}
+    {{ $summary = $pages.Params.summary | markdownify | emojify }}
+  {{ else if $pages.Summary }}
+    {{ $summary = $pages.Summary }}
+  {{ end }}
+
+  {{/* 대표 이미지 설정 */}}
+  {{ $resource := $pages.Params.image }}
+  {{ if $resource }}
+    {{ $resource = $resource.filename }}
+  {{ end }}
+
 <div class="custom-list-grid">
-  {{ range .pages }}
-  {{ $pages := .pages }}
-  {{ $has_attachments := partial "functions/has_attachments" $pages }}
-
-    {{/* 링크 설정 */}}
-    {{ $link := $pages.RelPermalink }}
-
-    {{/* 요약 설정 */}}
-    {{ $summary := "" }}
-    {{ if $pages.Params.summary }}
-      {{ $summary = $pages.Params.summary | markdownify | emojify }}
-    {{ else if $pages.Summary }}
-      {{ $summary = $pages.Summary }}
-    {{ end }}
-
-    {{/* 대표 이미지 설정 */}}
-    {{ $resource := $pages.Params.image }}
-    {{ if $resource }}
-      {{ $resource = $resource.filename }}
-    {{ end }}
-
     <div class="custom-card">
       <!-- 이미지 출력 -->
       {{ if $resource }}
