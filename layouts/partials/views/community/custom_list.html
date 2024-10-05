@@ -23,10 +23,11 @@
       {{ end }}
 
       {{ $image := $item.Params.image }}
+
       <div class="project-card">
         <div class="project-image">
           {{ if $image }}
-            <img src="{{ $image }}" alt="{{ $item.Title }}" style="width: 100%; height: auto;" />
+            <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title }}" />
           {{ end }}
         </div>
         <div class="project-details">
