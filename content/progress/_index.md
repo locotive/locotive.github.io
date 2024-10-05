@@ -2,7 +2,11 @@
 title: In Progress Projects
 type: landing
 
-view: article-grid
+cascade:
+  - _target:
+      kind: page
+    params:
+      show_breadcrumb: true
 
 # Optional header image (relative to `static/media/` folder).
 sections:

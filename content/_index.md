@@ -89,7 +89,17 @@ sections:
     design:
       date_format: 'January 2006'
       is_education_first: false
-  
+
+  - block: collection
+    content:
+      title: Now Studying
+      filters:
+        folders:
+          - studying
+    design:
+      view: card
+      columns: 3
+
   - block: collection
     content:
       title: In Progress Projects
