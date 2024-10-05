@@ -46,7 +46,7 @@ sections:
             position: center
             color: '#000'
         - title: "<span style='font-size:90%'>LoLchess</span>"
-          content: "<span style='font-size:90%'>Improvement in concentration and quick decision-making.</span style='font-size:90%'>"
+          content: "<span style='font-size:90%'>Improvement in concentration and quick decision-making.<span style='font-size:90%'>"
           align: center
           background:
             image:
