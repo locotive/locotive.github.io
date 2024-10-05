@@ -90,8 +90,10 @@ sections:
       title: Ongoing Projects
       text: ""
       filters:
+        tags:
+          - Ongoing
         folders:
-          - project/Ongoing Projects
+          - project
         exclude_featured: false
     design:
       view: article-grid
@@ -101,8 +103,10 @@ sections:
     content:
       title: Completed Projects
       filters:
+        tags:
+          - Completed 
         folders:
-          - project/Completed Projects
+          - project
     design:
       view: article-grid
       columns: 3
