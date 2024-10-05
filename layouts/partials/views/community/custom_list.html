@@ -1,43 +1,35 @@
 <div class="custom-list-grid">
-  {{ range .Pages }}
-    {{ $page := . }}
-
-    {{/* 링크 설정 */}}
-    {{ $link := $page.RelPermalink }}
-
-    {{/* 요약 설정 */}}
-    {{ $summary := "" }}
-    {{ if $page.Params.summary }}
-      {{ $summary = $page.Params.summary | markdownify | emojify }}
-    {{ else if $page.Summary }}
-      {{ $summary = $page.Summary }}
-    {{ end }}
-
-    {{/* 대표 이미지 설정 */}}
-    {{ $resource := $page.Params.image }}
-    {{ if $resource }}
-      {{ $resource = $resource.filename }}
-    {{ end }}
-
+  {{ range where .Site.RegularPages "Section" "studying" }} <!-- 여기서 .Site.RegularPages를 사용 -->
     <div class="custom-card">
+      {{/* 요약 설정 */}}
+      {{ $summary := "" }}
+      {{ if .Params.summary }}
+        {{ $summary = .Params.summary | markdownify | emojify }}
+      {{ else if .Summary }}
+        {{ $summary = .Summary }}
+      {{ end }}
+
+      {{/* 대표 이미지 설정 */}}
+      {{ $resource := .Params.image.filename }}
+      
       <!-- 이미지 출력 -->
       {{ if $resource }}
         <div class="custom-image">
-          <img src="{{ $resource | relURL }}" alt="{{ $page.Title }}" />
+          <img src="{{ $resource | relURL }}" alt="{{ .Title }}" />
         </div>
       {{ end }}
       
       <!-- 제목과 요약 출력 -->
       <div class="custom-details">
-        <h3 class="custom-title">{{ $page.Title }}</h3>
+        <h3 class="custom-title">{{ .Title }}</h3>
         <p class="custom-summary">{{ $summary }}</p>
-        <a href="{{ $link }}" class="custom-link">Read more</a>
+        <a href="{{ .RelPermalink }}" class="custom-link">Read more</a> <!-- 링크 수정 -->
       </div>
     </div>
+  {{ else }}
+    <p>No pages found in studying section.</p>
   {{ end }}
 </div>
-
-<pre>{{ . | jsonify }}</pre>
 
 <!-- 스타일 적용 -->
 <style>
