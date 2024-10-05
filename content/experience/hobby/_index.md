@@ -16,10 +16,12 @@ sections:
       username: admin
     design:
       show_skill_percentage: false
+
   - block: resume-languages
     content:
       title: Languages
       username: admin
+
   - block: slider
     content:
       slides:
