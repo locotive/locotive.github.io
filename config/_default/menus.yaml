@@ -29,11 +29,11 @@ main:
     weight: 200
   - parent: Experience
     name: Computer
-    url: computer/
+    url: experience/computer/
     weight: 210
   - parent: Experience
     name: Hobby
-    url: hobby/
+    url: experience/hobby/
     weight: 220
   
   - name: Studying
