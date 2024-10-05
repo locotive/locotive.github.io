@@ -1,4 +1,4 @@
-<script type="text/javascript" src='https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId={{ with .Get "key" }}{{ . }}{{ else }}{{ .Site.Params.params.naverMapApiKey }}{{end}}'></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=63mEMzJVYMNahKTr8JPQhHyMFh5bhoaKhcALfwQi"></script>
 <div class="shortcode shortcode--navermap">
 	<div id="map" style='width:{{ with .Get "width" }}{{.}}{{else}}500px{{end}}; height:{{ with .Get "height" }}{{.}}{{else}}300px{{end}}'>
 	</div>
