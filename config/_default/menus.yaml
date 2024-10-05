@@ -11,29 +11,34 @@ main:
     name: About Me
     url: /
     weight: 110
-  - name: Experience
+  - parent: BIO
+    name: Experience
     url: experience/
     weight: 120
-  - parent: Experience
-    name: Computer
-    url: experience/computer/
-    weight: 310
-  - parent: Experience
-    name: Hobby
-    url: experience/hobby/
-    weight: 320
   - parent: BIO
     name: Ongoing Projects
-    url: ongoing/
+    url:  project/ongoing/
     weight: 130
   - parent: BIO
     name: Completed Projects
-    url: completed/
+    url: project/completed/
     weight: 140
+
+  - name: Experience
+    url: experience/
+    weight: 200
+  - parent: Experience
+    name: Computer
+    url: experience/computer/
+    weight: 210
+  - parent: Experience
+    name: Hobby
+    url: experience/hobby/
+    weight: 220
   
   - name: Studying
     url: teaching/
-    weight: 200
+    weight: 300
 
   - name: Projects
     url: project/
