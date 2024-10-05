@@ -9,8 +9,7 @@ math: false
 tags:
  - Java
  - Programming
-image:
-    filename: "featured.jpg"
+image: "featured.jpg"
 ---
 
 ## Plan
