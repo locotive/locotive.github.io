@@ -103,4 +103,5 @@ sections:
       css_id: projects
       view: article-grid
       columns: 3
+      pagination: false
 ---
