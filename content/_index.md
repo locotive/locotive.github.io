@@ -97,7 +97,7 @@ sections:
         folders:
           - studying
     design:
-      view: community/custom_list
+      view: views/community/custom_list
       columns: '3'
 
   - block: collection
@@ -105,7 +105,7 @@ sections:
       title: In Progress Projects
       filters:
         folders:
-          - progress/Personal-page
+          - views/progress/Personal-page
     design:
       view: community/custom_single
       columns: '1'
