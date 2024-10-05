@@ -11,7 +11,6 @@ cascade:
 
 sections:
   - block: collection
-    id: teaching
     content:
       title: studying
       filters:
