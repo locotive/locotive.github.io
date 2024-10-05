@@ -92,8 +92,8 @@ sections:
       filters:
         folders:
           - project
-        tags:
-          - Ongoing
+        custom_fields:
+          status: ongoing
         exclude_featured: false
     design:
       view: article-grid
@@ -105,8 +105,8 @@ sections:
       filters:
         folders:
           - project
-        tags:
-          - Completed 
+        custom_fields:
+          status: completed
     design:
       view: article-grid
       columns: 3

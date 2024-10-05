@@ -6,6 +6,7 @@ tags:
   - hugo
   - WebDevelopment  
   - StaticSiteGenerator
+status: ongoing
 ---
 
 As part of a web service design course, I built a personal web page using Hugo, a static site generator. This project involved creating a responsive and customizable website, focusing on showcasing my portfolio and interests. Through this, I gained hands-on experience in web development, specifically in static site generation and customizing templates.
