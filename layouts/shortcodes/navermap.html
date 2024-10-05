@@ -1,5 +1,5 @@
 <script type="text/javascript" src='https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId={{ with .Get "key" }}{{ . }}{{ else }}{{ .Site.Params.params.naverMapApiKey }}{{end}}'></script>
-<div class="shortcode shortcode--naver-map">
+<div class="shortcode shortcode--navermap">
 	<div id="map" style='width:{{ with .Get "width" }}{{.}}{{else}}500px{{end}}; height:{{ with .Get "height" }}{{.}}{{else}}300px{{end}}'>
 	</div>
 </div>
