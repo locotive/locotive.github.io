@@ -66,6 +66,7 @@ sections:
             size: cover
       design:
         slider:
+          height: 800px
           autoplay: true
           interval: 5000
           show_arrows: true
