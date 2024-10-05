@@ -97,7 +97,7 @@ sections:
         folders:
           - studying
     design:
-      view: custom_list
+      view: community/custom_list
       columns: '3'
 
   - block: collection
@@ -107,7 +107,7 @@ sections:
         folders:
           - progress
     design:
-      view: ustom_single
+      view: community/custom_single
       columns: '1'
 
   - block: collection
