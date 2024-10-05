@@ -2,6 +2,7 @@
 {{ $block := .wcBlock }}
 {{ $hash_id := .wcIdentifier }}
 {{ $slide_count := len $block.content.slides }}
+{{ $slider_height := $block.design.slider.slide_height | default "500px" }}
 
 <div id="{{ $hash_id }}" class="carousel slide" data-ride="carousel">
   {{ if gt $slide_count 1 }}
@@ -19,7 +20,7 @@
       {{ $style_filter := "" }}
 
       {{ with $block.design.slide_height }}
-        {{ $style_bg = printf "%s height: %s;" $style_bg . }}
+        {{ $style_bg = printf "%s height: %s;" $style_bg $slider_height }} <!-- 동적으로 높이를 설정 -->
       {{ end }}
 
       {{ $bg := $item.background }}
