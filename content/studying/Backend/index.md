@@ -1,141 +1,70 @@
 ---
-title: Learn JavaScript
-summary: Easily learn JavaScript in 10 minutes!
-date: 2023-10-24
+title: Backend Study Guide
+summary: "Backend study materials"
+date: 2024-10-06
 type: docs
 math: false
 tags:
-  - JavaScript
+  - Backend
+  - Web Development
 image:
   filename: "featured.jpg"
-summary: "Backend 관련 스터디 자료"
+
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+Backend
+Web Development
+image:
+filename: "backend-featured.jpg"
+summary: "Backend study materials"
+## Plan
+    This is a focused plan to master Backend development over the winter break. Below is a roadmap that outlines the learning objectives and key phases. Each phase combines both theory and hands-on practice to maximize learning efficiency, diving deep into each topic.
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+## Laying the Foundations (Weeks 1-2)
+# Key Topics:
+        Understanding HTTP/HTTPS Protocols: Learn how client-server communication works, including HTTP status codes, headers, and cookies.
+        REST API: Understand what RESTful APIs are and how to design and use them.
+        Git & GitHub: Learn how to manage version control using Git, and practice collaboration by hosting a project on GitHub.
+## Choosing a Backend Language and Basic Learning (Weeks 3-5)
+# Key Topics:
+    Choose a language like Python (Django) or Node.js (Express) and dive deep:
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+    Start with basic syntax and gradually move to building a web server.
+    Create simple APIs and get familiar with sending and receiving data.
+    Introduction to Databases:
 
-## Video
+    Compare SQL and NoSQL databases and their use cases.
+    Install and practice using MySQL or PostgreSQL.
+    Learn about NoSQL databases like MongoDB to broaden your understanding.
+## Moving to Intermediate Backend Development (Weeks 6-8)
+    Key Topics:
+    Authentication and Authorization:
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+    Implement authentication using JWT (JSON Web Tokens).
+    Learn about external authentication methods like OAuth2.
+    Asynchronous Processing and Message Queues:
 
-{{< youtube D2vj0WcvH5c >}}
+    Understand the concept of asynchronous task handling.
+    Learn how to use message queues such as RabbitMQ or Apache Kafka.
+## Project-Based Learning (Weeks 9-12)
+    Key Topics:
+    Building a Full Project:
 
-**Youtube**:
+    Use the knowledge gained to complete a full backend project.
+    Create a simple e-commerce site, blog, or TODO list API to get hands-on experience with real-world scenarios.
+    Deployment and Operations:
 
-    {{</* youtube w7Ft2ymGmfc */>}}
+    Learn containerization using Docker.
+    Deploy applications on AWS, Heroku, or DigitalOcean.
+    Set up CI/CD pipelines to automate testing and deployment.
+## Optimization and Advanced Topics (Weeks 13-14)
+    Key Topics:
+    Application Performance Optimization:
 
-**Bilibili**:
+    Learn caching strategies (e.g., using Redis).
+    Optimize database queries and performance tuning.
+    Logging and Monitoring:
 
-    {{</* bilibili id="BV1WV4y1r7DF" */>}}
-
-**Video file**
-
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
-
-    {{</* video src="my_video.mp4" controls="yes" */>}}
-
-## Podcast
-
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
-
-    {{</* audio src="ambient-piano.mp3" */>}}
-
-Try it out:
-
-{{< audio src="ambient-piano.mp3" >}}
-
-## Test students
-
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
-
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
-```
-
-renders as
-
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
-
-## Math
-
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
-
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
-
-{{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
-{{% /callout %}}
-
-Example **math block**:
-
-```latex
-{{</* math */>}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-{{< /math >}}
-
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
-
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-{{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-{{</* /math */>}}
-```
-
-renders as
-
-{{< math >}}
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-{{< /math >}}
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
-
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
-```
-
-## Inline Images
-
-```go
-{{</* icon name="python" */>}} Python
-```
-
-renders as
-
-{{< icon name="python" >}} Python
-
-## Did you find this page helpful? Consider sharing it 🙌
+    Set up logging and monitoring systems using the ELK stack (Elasticsearch, Logstash, Kibana) or Prometheus with Grafana.
+## Goal:
+    By the end of winter break, the goal is to follow these steps systematically to master all essential Backend skills and apply them through project work.

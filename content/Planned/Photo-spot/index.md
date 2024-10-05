@@ -9,8 +9,9 @@ tags:
   - Real-time weather information.
   - Light pollution maps for night photography planning.
   - User-friendly interface for easy navigation and exploration.
-
+  
 share: false
+featured: true
 
 ---
 
