@@ -25,7 +25,7 @@ sections:
   - block: slider
     content:
       slides:
-        - title: "<span style="font-size:90%">Hobby</span>
+        - title: "<span style='font-size:90%'>Hobby</span>"
           content: <span style="font-size:90%">I plan projects that combine my hobbies.<span style="font-size:90%">
           align: center
           background:
@@ -35,7 +35,7 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-        - title: "<span style="font-size:90%">Chess</span>
+        - title: "<span style='font-size:90%'>Chess</span>"
           content: <span style="font-size:90%">Improvement in concentration and quick decision-making.<span style="font-size:90%">
           align: center
           background:
