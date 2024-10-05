@@ -1,46 +1,44 @@
 <div class="custom-list-grid">
-  {{ range .Sections }}
-    {{ $section := . }}
+  {{ range .Pages }}
+    {{ $page := . }}
 
-    {{/* 하위 섹션의 index.md 파일 참조 */}}
-    {{ if $section.File }}
-      {{ $link := $section.RelPermalink }}
-      {{ $target := "" }}
-      {{ if $section.Params.external_link }}
-        {{ $link = $section.Params.external_link }}
-        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-      {{ end }}
-
-      {{/* 요약 설정 */}}
-      {{ $summary := "" }}
-      {{ if $section.Params.summary }}
-        {{ $summary = $section.Params.summary | markdownify | emojify }}
-      {{ else if $section.Summary }}
-        {{ $summary = $section.Summary }}
-      {{ end }}
-
-      {{/* 대표 이미지 설정 */}}
-      {{ $resource := $section.Params.image }}
-      {{ if $resource }}
-        {{ $resource = $resource.filename }}
-      {{ end }}
-
-      <div class="custom-card">
-        <!-- 이미지 출력 -->
-        {{ if $resource }}
-          <div class="custom-image">
-            <img src="{{ $resource | relURL }}" alt="{{ $section.Title }}" />
-          </div>
-        {{ end }}
-        
-        <!-- 제목과 요약 출력 -->
-        <div class="custom-details">
-          <h3 class="custom-title">{{ $section.Title }}</h3>
-          <p class="custom-summary">{{ $summary }}</p>
-          <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-link">Read more</a>
-        </div>
-      </div>
+    {{/* 링크 설정 */}}
+    {{ $link := $page.RelPermalink }}
+    {{ $target := "" }}
+    {{ if $page.Params.external_link }}
+      {{ $link = $page.Params.external_link }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
     {{ end }}
+
+    {{/* 요약 설정 */}}
+    {{ $summary := "" }}
+    {{ if $page.Params.summary }}
+      {{ $summary = $page.Params.summary | markdownify | emojify }}
+    {{ else if $page.Summary }}
+      {{ $summary = $page.Summary }}
+    {{ end }}
+
+    {{/* 대표 이미지 설정 */}}
+    {{ $resource := $page.Params.image }}
+    {{ if $resource }}
+      {{ $resource = $resource.filename }}
+    {{ end }}
+
+    <div class="custom-card">
+      <!-- 이미지 출력 -->
+      {{ if $resource }}
+        <div class="custom-image">
+          <img src="{{ $resource | relURL }}" alt="{{ $page.Title }}" />
+        </div>
+      {{ end }}
+      
+      <!-- 제목과 요약 출력 -->
+      <div class="custom-details">
+        <h3 class="custom-title">{{ $page.Title }}</h3>
+        <p class="custom-summary">{{ $summary }}</p>
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="custom-link">Read more</a>
+      </div>
+    </div>
   {{ end }}
 </div>
 
