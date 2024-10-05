@@ -1,6 +1,7 @@
 ---
 title: Personal-Web-Page
 date: 2024-09-28
+type: docs
 tags:
   - hugo
   - WebDevelopment  
