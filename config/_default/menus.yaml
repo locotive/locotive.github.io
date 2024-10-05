@@ -7,19 +7,19 @@ main:
   - name: BIO
     url: /
     weight: 100
-  -parent: BIO
+  - parent: BIO
     name: About Me
     url: /#about-me
     weight: 110
-  -parent: BIO
+  - parent: BIO
     name: Experience
     url: /#Experience
     weight: 120
-  -parent: BIO
+  - parent: BIO
     name: Ongoing Projects
     url: /#ongoing-projects
     weight: 130
-  -parent: BIO
+  - parent: BIO
     name: Completed Projects
     url: /#completed-projects
     weight: 140
@@ -31,11 +31,11 @@ main:
   - name: Experience
     url: experience/
     weight: 300
-  -parent: Experience
+  - parent: Experience
     name: Computer
     url: /#experience
     weight: 310
-  -parent: Experience
+  - parent: Experience
     name: Hobby
     url: /#hobby
     weight: 320
@@ -43,11 +43,11 @@ main:
   - name: Projects
     url: projects/
     weight: 400
-  -parent: Projects
+  - parent: Projects
     name: Ongoing Projects
     url: /#ongoing-projects
     weight: 410
-  -parent: Projects
+  - parent: Projects
     name: Completed Projects
     url: /#completed-projects
     weight: 420
