@@ -51,6 +51,11 @@ main:
     name: Completed Projects
     url: project/completed/
     weight: 420
+  
+   - parent: BIO
+    name: Projects
+    url: project/
+    weight: 450
 
   - name: Contact
     url: contact/
