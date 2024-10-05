@@ -1,3 +1,4 @@
+---
 title: ""
 date: 2024-09-28
 type: landing
@@ -69,3 +70,4 @@ sections:
           interval: 5000
           show_arrows: true
           show_dots: true  
+---
