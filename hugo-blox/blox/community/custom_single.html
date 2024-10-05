@@ -1,46 +1,116 @@
-<div class="project-detail-card">
+<article class="single-project">
+  {{ $item := . }}
+  
+  <header class="project-header">
+    <h1 class="project-title">{{ $item.Title }}</h1>
+    {{ if $item.Params.date }}
+      <p class="project-date">{{ $item.Date.Format "January 2, 2006" }}</p>
+    {{ end }}
+  </header>
+
+  {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+  {{ with $resource }}
     <div class="project-image">
-      {{ with .Params.image }}
-        <img src="{{ .src }}" alt="{{ .alt }}" />
-      {{ end }}
+      {{ $image := .Resize "850x" }}
+      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title }}" class="img-responsive" loading="lazy">
     </div>
-    <div class="project-content">
-      <h1>{{ .Title }}</h1>
-      <p>{{ .Date.Format "2006-01-02" }}</p>
+  {{ end }}
+
+  <div class="project-content">
+    {{ if $item.Params.summary }}
+      <p class="project-summary">{{ $item.Params.summary | markdownify | emojify }}</p>
+    {{ end }}
+
+    <div class="project-body">
       {{ .Content }}
     </div>
   </div>
-  
-  <style>
-  .project-detail-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-  }
-  
-  .project-detail-card .project-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-  
-  .project-detail-card .project-content {
-    text-align: center;
-  }
-  
-  .project-detail-card h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .project-detail-card p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-  </style>
-  
+
+  {{ if $item.Params.tags }}
+    <div class="project-tags">
+      <p><strong>Tags:</strong> {{ range $item.Params.tags }}<span class="tag">{{ . }}</span> {{ end }}</p>
+    </div>
+  {{ end }}
+
+  {{ if $item.Params.external_link }}
+    <div class="project-link">
+      <a href="{{ $item.Params.external_link }}" target="_blank" rel="noopener" class="btn btn-primary">Visit Project</a>
+    </div>
+  {{ end }}
+</article>
+
+<style>
+.single-project {
+  margin: 0 auto;
+  max-width: 850px;
+  padding: 2rem;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-date {
+  font-size: 1rem;
+  color: #888;
+}
+
+.project-image {
+  margin: 2rem 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-content {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.project-summary {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.project-tags {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.project-link {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.project-link .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+}
+
+.project-link .btn:hover {
+  background-color: #0056b3;
+}
+</style>
