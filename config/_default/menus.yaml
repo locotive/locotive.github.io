@@ -13,7 +13,7 @@ main:
       weight: 11
   -parent: BIO
     - name: Experience
-      url: /#experience
+      url: /#Experience
       weight: 12
   -parent: BIO
     - name: Ongoing Projects
