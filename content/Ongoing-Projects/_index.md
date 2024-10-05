@@ -1,4 +1,4 @@
 ---
-title: "Ongoing Projects"
+title: Ongoing-Projects
 view: article-grid
 ---
