@@ -99,7 +99,7 @@ sections:
           - studying/backend
           - studying/java
     design:
-      view: community/custom_list
+      view: list
       columns: '3'
 
   - block: collection
@@ -109,7 +109,7 @@ sections:
         folders:
           - progress
     design:
-      view: community/custom_single
+      view: single
 
   - block: collection
     content:
