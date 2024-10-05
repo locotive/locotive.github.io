@@ -31,20 +31,19 @@
         {{ $angle := string $bg.gradient_angle | default "90" }}
         {{ $style_bg = printf "%s background-image: linear-gradient(%sdeg, %s, %s);" $style_bg $angle $bg.gradient_start $bg.gradient_end }}
       {{ end }}
-
-      {{ if $bg.image.filename }}
-        {{ $bg_img := resources.Get (printf "media/%s" $bg.image.filename) }}
-        {{ if $bg_img }}
-          {{ $style_bg = printf "%s background-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s;" $style_bg $bg_img.Permalink ($bg.image.position | default "center") ($bg.image.size | default "cover") }}
-        {{ else }}
-          {{ errorf "Could not locate `%s` in the `assets/media/` directory - please add it." $bg.image.filename }}
+        {{ if $bg.image.filename }}
+            {{ $bg_img := resources.Get (printf "media/%s" $bg.image.filename) }}
+            {{ if $bg_img }}
+                {{ $style_bg = printf "%s background-image: url('%s'); background-repeat: no-repeat; background-position: %s; background-size: %s; opacity: 0.8;" $style_bg $bg_img.Permalink ($bg.image.position | default "center") ($bg.image.size | default "cover") }}
+            {{ else }}
+                {{ errorf "Could not locate `%s` in the `assets/media/` directory - please add it." $bg.image.filename }}
         {{ end }}
         {{ with $bg.image.filters.brightness }}
-          {{ $style_filter = printf "%s -webkit-backdrop-filter: brightness(%s); backdrop-filter: brightness(%s);" $style_filter (string .) (string .) }}
-        {{ end }}
+  {{ $style_filter = printf "%s -webkit-backdrop-filter: brightness(%s) contrast(1.2); backdrop-filter: brightness(%s) contrast(1.2);" $style_filter (string .) (string .) }}
+{{ end }}
       {{ end }}
 
-      <div class="carousel-item{{ if eq $index 0 }} active{{ end }} {{ with $block.design.is_fullscreen }}fullscreen{{ end }}" style="{{ $style_bg | safeCSS }}">
+      <div class="carousel-item{{ if eq $index 0 }} active{{ end }} {{ with $block.design.is_fullscreen }}fullscreen{{ end }}" style="{{ $style_bg | safeCSS }} text-align: center;">
         <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }}">
           <div class="wg-hero dark container" style="margin: 0 6rem; text-align: {{ $item.align | default "left" }};">
             <h1 class="hero-title">
@@ -200,6 +199,20 @@
     color: lightblue;
     text-decoration: underline;
   }
+  .hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hero-lead {
+  font-size: 1.25rem;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
