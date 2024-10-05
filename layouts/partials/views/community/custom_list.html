@@ -23,13 +23,13 @@
       <!-- 이미지 출력 -->
       {{ if $resource }}
         <div class="custom-image">
-          <img src="{{ $resource | relURL }}" alt="{{ $page.Title }}" />
+          <img src="{{ $resource | relURL }}" alt="{{ $item.Title }}" />
         </div>
       {{ end }}
       
       <!-- 제목과 요약 출력 -->
       <div class="custom-details">
-        <h3 class="custom-title">{{ $page.Title }}</h3>
+        <h3 class="custom-title">{{ $item.Title }}</h3>
         <p class="custom-summary">{{ $summary }}</p>
         <a href="{{ $link }}" class="custom-link">Read more</a>
       </div>
