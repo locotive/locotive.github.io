@@ -93,7 +93,7 @@ sections:
         folders:
           - project
         custom_fields:
-          status: ongoing
+          categories: ongoing
         exclude_featured: false
     design:
       view: article-grid
@@ -106,7 +106,7 @@ sections:
         folders:
           - project
         custom_fields:
-          status: completed
+          categories: completed
     design:
       view: article-grid
       columns: 3
