@@ -1,5 +1,5 @@
 <div class="custom-list-grid">
-  {{ range where .Site.RegularPages "Section" "studying" }} <!-- 여기서 .Site.RegularPages를 사용 -->
+  {{ range where .Site.RegularPages "type" "docs" }} <!-- 여기서 .Site.RegularPages를 사용 -->
     <div class="custom-card">
       {{/* 요약 설정 */}}
       {{ $summary := "" }}
