@@ -18,5 +18,5 @@ sections:
           - studying
     design:
       view: article-grid
-      columns: 2
+      columns: 3
 ---
