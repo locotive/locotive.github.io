@@ -51,18 +51,23 @@
       <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="{{ $style_bg | safeCSS }} text-align: center; height: {{ $slider_height }};">
         <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }}">
           <div class="wg-hero dark container-fluid" style="margin: 0 6rem; text-align: {{ $item.align | default "center" }};">
-            <span class="hero-title" style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
+            <h1 class="hero-title">
               {{ with $item.title }}{{ . | markdownify | emojify }}{{ end }}
-            </span>
-      
+            </h1>
+
             {{ with $item.content }}
-            <p class="hero-lead" style="z-index: 2; {{ if eq $item.align "center" }}margin: 0 auto;{{ else if eq $item.align "right" }}margin-left: auto; margin-right: 0;{{ end }}">
+            <p class="hero-lead" style="{{ if eq $item.align "center" }}margin: 0 auto;{{ else if eq $item.align "right" }}margin-left: auto; margin-right: 0;{{ end }}">
               {{ . | emojify | $page.RenderString }}
             </p>
             {{ end }}
-      
+
             {{ if $item.link.url }}
-              <p style="z-index: 2;">
+              {{ $pack := $item.link.icon_pack | default "fas" }}
+              {{ $pack_prefix := $pack }}
+              {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+                {{ $pack_prefix = "fa" }}
+              {{ end }}
+              <p>
                 <a href="{{ $item.link.url }}" class="custom-btn custom-btn-light custom-btn-lg custom-mt-3">
                   {{- with $item.link.icon -}}<i class="custom-icon" style="padding-right: 10px;"></i>{{- end -}}
                   {{- $item.link.text | emojify | markdownify | safeHTML -}}
@@ -71,7 +76,7 @@
             {{ end }}
           </div>
         </div>
-      </div>      
+      </div>  
     {{ end }}
   </div>
 
