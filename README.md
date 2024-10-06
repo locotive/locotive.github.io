@@ -1,7 +1,5 @@
 # Nam Jaemin
 
-![Profile Image](content\ko\authors\admin\avatar.jpg)
-
 ## Contact Information
 
 - **Email:** locotive@naver.com
