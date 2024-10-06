@@ -1,6 +1,8 @@
 ---
 title: Planned Projects
 type: landing
+featured:
+  image: lucia-macedo-9USYbfMD250-unsplash.jpg
 
 cascade:
   - _target:

@@ -1,6 +1,8 @@
 ---
 title: In Progress Projects
 type: landing
+featured:
+  image: luca-bravo-XJXWbfSo2f0-unsplash.jpg
 
 cascade:
   - _target:

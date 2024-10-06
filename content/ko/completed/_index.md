@@ -1,7 +1,8 @@
 ---
 title: Completed Projects
 type: landing
-
+featured:
+  image: samsung-memory-l_p4pay8CTM-unsplash.jpg
 cascade:
   - _target:
       kind: page
