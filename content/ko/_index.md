@@ -21,7 +21,7 @@ sections:
       background:
         color: black
         image:
-          filename: stacked-peaks.svg
+          filename: jeremy-bishop-G9i_plbfDgk-unsplash.jpg
           filters:
             brightness: 1.0
           size: cover
