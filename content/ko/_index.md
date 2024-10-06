@@ -3,7 +3,6 @@
 title: ""
 date: 2024-09-28
 type: landing
-<meta name="google-site-verification" content="QIWfqj10Ty10qnhd9nb9gIxcQyOICoccW7Ic74KMdxc" />
 design:
   spacing: "6rem"
 
