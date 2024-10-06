@@ -11,7 +11,7 @@ tags:
   - Ideal for capturing clear images of the Milky Way without star trails.
 
 share: false
-images:
+image:
   filename:
    - "nate-rayfield-_WR6tUIAJe8-unsplash.jpg"
    - featured
