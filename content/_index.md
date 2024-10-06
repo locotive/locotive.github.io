@@ -113,7 +113,7 @@ sections:
         folders:
           - progress
     design:
-      view: date-title-summary
+      view: single
 
   - block: collection
     content:
@@ -122,7 +122,7 @@ sections:
         folders:
           - completed
     design:
-      view: card
+      view: date-title-summary
       columns: 3
 
   - block: collection
