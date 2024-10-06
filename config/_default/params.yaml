@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: "#ff5733"
+  color: cyan
 
 # SEO
 marketing:
@@ -81,7 +81,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
-
+    
 params:
   social:
     image: sharing.jpg
