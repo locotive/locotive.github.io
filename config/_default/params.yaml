@@ -82,6 +82,3 @@ features:
   privacy_pack:
     enable: false
     
-params:
-  social:
-    image: 'assets/media/sharing.jpg'
