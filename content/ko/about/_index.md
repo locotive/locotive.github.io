@@ -12,7 +12,7 @@ sections:
       username: admin
       text: ""
       button:
-        text: Download CV
+        text: 이력서 다운로드
         url: uploads/empty.pdf
     design:
       css_class: dark

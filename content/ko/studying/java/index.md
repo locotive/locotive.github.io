@@ -1,6 +1,6 @@
 ---
-title: Java Study Guide
-summary: Study materials focused on mastering Java
+title: 자바 공부 계획
+summary: 자바를 마스터하는 데 중점을 둔 학습 자료
 date: 2024-09-01
 authors:
     - admin
@@ -13,47 +13,49 @@ image:
     filename: "featured.jpg"
 ---
 
-## Plan
+## 계획
 
-This is a focused plan to master Java over the winter break. Below is a roadmap that outlines the learning objectives and key phases. Each phase combines both theory and hands-on practice to maximize learning efficiency and deepen understanding of Java.
+아래는 겨울 방학 끝나기 전에 자바를 마스터하기 위한 집중적인 계획입니다. 이 로드맵은 학습 목표와 주요 단계를 개괄하며, 각 단계는 이론과 실습을 결합하여 학습 효율성을 극대화하고 자바에 대한 깊은 이해를 돕고자 합니다.
 
-## Laying the Foundations (Weeks 1-2) ##
+## 기초 다지기 (1-2주차)
 
-**Key Topics:**
+**주요 주제:**
 
-Basic Syntax: Understand the structure of Java programs, data types, operators, and control flow (loops, conditionals).
-Object-Oriented Programming (OOP): Dive deep into OOP concepts like classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
-Java Collections: Learn the usage of arrays, lists, sets, maps, and queues.
+기본 문법: 자바 프로그램의 구조, 데이터 타입, 연산자, 제어 흐름(반복문, 조건문)을 이해합니다.
+객체지향 프로그래밍(OOP): 클래스, 객체, 상속, 다형성, 캡슐화, 추상화 등의 객체지향 개념을 깊이 있게 학습합니다.
+자바 컬렉션: 배열, 리스트, 집합(Set), 맵(Map), 큐(Queue)의 사용법을 익힙니다.
 
-## Core Java Programming (Weeks 3-5)
+## 자바 핵심 프로그래밍 (3-5주차)
 
-**Key Topics:**
+**주요 주제:**
 
-Exception Handling: Learn about Java's exception hierarchy, try-catch blocks, and custom exceptions.
-File I/O: Get familiar with reading from and writing to files in Java using streams and readers.
-Concurrency: Understand multithreading in Java, including creating threads, synchronizing them, and using the java.util.concurrent package.
-## Moving to Intermediate Java (Weeks 6-8)
+예외 처리: 자바의 예외 계층 구조, try-catch 블록, 커스텀 예외에 대해 학습합니다.
+파일 입출력(File I/O): 스트림과 리더(reader)를 사용하여 자바에서 파일을 읽고 쓰는 방법을 익힙니다.
+동시성: 자바에서 멀티스레드를 생성하고 동기화하는 방법 및 java.util.concurrent 패키지 사용법을 학습합니다.
 
-**Key Topics:**
+## 중급 자바로 이동 (6-8주차)
 
-Generics: Learn how to write flexible and reusable code using Java generics.
-Lambdas and Streams: Explore functional programming in Java through lambda expressions and the Stream API for efficient data manipulation.
-Annotations and Reflection: Understand how annotations work and how to use reflection for dynamic code analysis.
-## Project-Based Learning (Weeks 9-12)
+**주요 주제:**
 
-**Key Topics:**
+제네릭(Generics): 자바 제네릭을 활용하여 유연하고 재사용 가능한 코드를 작성하는 방법을 배웁니다.
+람다와 스트림: 람다 표현식과 Stream API를 통해 자바에서 함수형 프로그래밍을 학습하고, 데이터를 효율적으로 조작하는 방법을 익힙니다.
+애너테이션과 리플렉션: 애너테이션의 작동 원리와 리플렉션을 사용한 동적 코드 분석 방법을 이해합니다.
 
-Building Java Applications: Apply your knowledge to build a complete project, such as a console-based library management system or an address book application.
-JavaFX: Create simple graphical user interfaces (GUIs) using JavaFX for a more interactive project.
-Maven/Gradle: Learn how to manage dependencies and build automation using Maven or Gradle.
+## 프로젝트 기반 학습 (9-12주차)
 
-## Advanced Java and Optimization (Weeks 13-14)
+**주요 주제:**
 
-**Key Topics:**
+자바 애플리케이션 구축: 지금까지 배운 지식을 적용하여 콘솔 기반 도서 관리 시스템이나 주소록 애플리케이션 같은 완성된 프로젝트를 구축합니다.
+JavaFX: JavaFX를 사용하여 간단한 그래픽 사용자 인터페이스(GUI)를 만들어 보다 인터랙티브한 프로젝트를 제작합니다.
+Maven/Gradle: Maven 또는 Gradle을 사용하여 의존성 관리 및 빌드 자동화 방법을 학습합니다.
 
-JVM Tuning and Optimization: Learn how to tune the Java Virtual Machine (JVM) for better performance, including garbage collection strategies.
-Memory Management: Understand Java’s memory model, heap and stack memory, and memory leaks.
-Testing: Learn about testing frameworks like JUnit and Mockito to write unit tests and mock objects.
+## 고급 자바 및 최적화 (13-14주차)
 
-## Goal:
-By the end of winter break, you will have gained a strong grasp of Java programming, including core and advanced concepts, and applied them through project-based learning.
+**주요 주제:**
+
+JVM 튜닝 및 최적화: 자바 가상 머신(JVM)을 튜닝하여 성능을 향상시키는 방법과 가비지 컬렉션 전략을 학습합니다.
+메모리 관리: 자바의 메모리 모델, 힙과 스택 메모리, 메모리 누수에 대해 이해합니다.
+테스트: JUnit 및 Mockito와 같은 테스트 프레임워크를 사용하여 단위 테스트 작성 및 객체 모킹(Mock) 방법을 배웁니다.
+
+## 목표:
+겨울 방학이 끝날 때쯤이면, 자바 프로그래밍의 핵심 및 고급 개념을 탄탄히 습득하고 이를 프로젝트 기반 학습을 통해 적용할 수 있는 수준에 도달하는 것이 목표입니다.

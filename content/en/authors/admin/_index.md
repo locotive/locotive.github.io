@@ -50,7 +50,7 @@ education:
     date_start: 2021-03-01
     summary: |
       GPA: 3.9/4.5
-       Currently pursuing a Bachelor's degree in Computer Science. Focused on software engineering, algorithms, and machine learning. Actively involved in various programming projects and competitions.
+       Currently pursuing a Bachelor's degree in Computer Science. Focused on software engineering, algorithms, and web. Actively involved in various programming projects and competitions.
     Courses included:
       - Data Structures and Algorithms
       - Operating Systems

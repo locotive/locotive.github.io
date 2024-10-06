@@ -1,6 +1,6 @@
 ---
-title: Operating Systems Study Guide
-summary: Study materials focused on mastering Operating Systems concepts
+title: 운영체제 공부 계획
+summary: 운영체제를 마스터하는 데 중점을 둔 학습 자료
 date: 2024-09-01
 authors:
     - admin
@@ -13,48 +13,48 @@ image:
     filename: "featured.jpg"
 ---
 
-## Plan
-This is a focused plan to master Operating Systems (OS) concepts over the winter break. Below is a roadmap that outlines the learning objectives and key phases. Each phase combines both theory and hands-on practice to maximize learning efficiency and deepen understanding of OS principles.
+## 계획
+이것은 겨울 방학 동안 운영 체제(OS) 개념을 마스터하기 위한 집중적인 계획입니다. 아래 로드맵은 학습 목표와 주요 단계를 개괄하며, 각 단계는 이론과 실습을 결합하여 학습 효율성을 극대화하고 운영 체제 원리에 대한 깊은 이해를 돕습니다.
 
-## Laying the Foundations (Weeks 1-2)
+## 기초 다지기 (1-2주차)
 
-**Key Topics:**
+**주요 주제:**
 
-Introduction to Operating Systems: Understand the purpose and functions of an operating system, the role of the kernel, and different types of operating systems (e.g., batch, time-sharing, real-time).
-Processes and Threads: Learn about process management, creation, termination, states, and scheduling. Understand the differences between processes and threads and the basics of context switching.
-System Calls: Explore how user programs interact with the operating system through system calls.
+운영 체제 소개: 운영 체제의 목적과 기능, 커널의 역할, 다양한 운영 체제 유형(배치, 시분할, 실시간 운영 체제 등)을 이해합니다.
+프로세스와 스레드: 프로세스 관리, 생성, 종료, 상태 및 스케줄링에 대해 학습합니다. 프로세스와 스레드의 차이점과 문맥 교환의 기본 개념을 이해합니다.
+시스템 호출: 사용자 프로그램이 운영 체제와 상호작용하는 방법인 시스템 호출에 대해 탐구합니다.
 
-## Process Synchronization and Deadlocks (Weeks 3-5)
+## 프로세스 동기화 및 교착 상태 (3-5주차)
 
-**Key Topics:**
+**주요 주제:**
 
-Concurrency and Synchronization: Understand the need for synchronization in multiprocessor systems. Learn about critical sections, mutual exclusion, and how to avoid race conditions using mechanisms like semaphores, mutexes, and monitors.
-Deadlocks: Dive into deadlock detection, prevention, avoidance (e.g., Banker's algorithm), and recovery. Learn the four necessary conditions for a deadlock to occur.
+동시성 및 동기화: 멀티프로세서 시스템에서 동기화의 필요성을 이해합니다. 임계 구역, 상호 배제, 경쟁 상태를 방지하는 방법(세마포어, 뮤텍스, 모니터 등)을 학습합니다.
+교착 상태: 교착 상태의 탐지, 예방, 회피(예: 은행가 알고리즘) 및 복구 방법을 학습합니다. 교착 상태가 발생하는 네 가지 필수 조건을 이해합니다.
 
-## Memory Management (Weeks 6-8)
+## 메모리 관리 (6-8주차)
 
-**Key Topics:**
+**주요 주제:**
 
-Memory Hierarchy: Understand the organization of memory, including primary (RAM) and secondary memory (disk storage), and the role of cache.
-Virtual Memory: Learn about paging, segmentation, and the concept of virtual memory. Understand how the OS manages memory through page tables and TLBs (Translation Lookaside Buffers).
-Swapping and Paging: Explore how modern OSes handle memory swapping between physical RAM and disk storage using paging and segmentation.
+메모리 계층 구조: 주 메모리(RAM)와 보조 메모리(디스크 저장소)를 포함한 메모리의 조직과 캐시의 역할을 이해합니다.
+가상 메모리: 페이징, 세그먼트, 가상 메모리의 개념을 학습합니다. 운영 체제가 페이지 테이블과 TLB(변환 색인 버퍼)를 통해 메모리를 관리하는 방법을 이해합니다.
+스와핑 및 페이징: 현대 운영 체제가 물리적 RAM과 디스크 저장소 간의 메모리 스와핑을 페이징 및 세그먼트를 사용하여 처리하는 방법을 탐구합니다.
 
-## Storage, File Systems, and I/O Management (Weeks 9-12)
+## 스토리지, 파일 시스템 및 I/O 관리 (9-12주차)
 
-**Key Topics:**
+**주요 주제:**
 
-File Systems: Learn about file organization, file system structures (e.g., FAT, NTFS, ext4), and how the OS manages file storage and retrieval.
-Disk Scheduling: Understand how the OS schedules disk I/O operations (e.g., FCFS, SSTF, SCAN, C-SCAN algorithms) for performance optimization.
-I/O Systems: Explore how the OS manages hardware devices, including device drivers, interrupts, and buffering.
+파일 시스템: 파일 조직, 파일 시스템 구조(FAT, NTFS, ext4 등)와 운영 체제가 파일 저장 및 검색을 관리하는 방법을 학습합니다.
+디스크 스케줄링: 운영 체제가 성능 최적화를 위해 디스크 I/O 작업을 스케줄링하는 방법(FCFS, SSTF, SCAN, C-SCAN 알고리즘)을 이해합니다.
+I/O 시스템: 운영 체제가 하드웨어 장치를 관리하는 방법(장치 드라이버, 인터럽트, 버퍼링 포함)을 탐구합니다.
 
-## Advanced Topics and Security (Weeks 13-14)
+## 고급 주제 및 보안 (13-14주차)
 
-**Key Topics:**
+**주요 주제:**
 
-OS Security: Understand key OS security principles, including user authentication, access control mechanisms, and encryption.
-Distributed Systems: Learn about distributed operating systems, client-server models, and synchronization in distributed environments.
-Virtualization: Explore the concepts of virtual machines (VMs) and hypervisors, and understand how virtualization allows multiple operating systems to run on a single hardware platform.
+운영 체제 보안: 사용자 인증, 접근 제어 메커니즘, 암호화 등 주요 운영 체제 보안 원칙을 이해합니다.
+분산 시스템: 분산 운영 체제, 클라이언트-서버 모델, 분산 환경에서의 동기화에 대해 학습합니다.
+가상화: 가상 머신(VM)과 하이퍼바이저 개념을 탐구하고, 가상화가 어떻게 단일 하드웨어 플랫폼에서 여러 운영 체제를 실행할 수 있게 하는지 이해합니다.
 
 ## Goal:
 
-By the end of winter break, you will have a solid understanding of how operating systems work, from process management to memory and storage management, with insights into advanced topics like security and virtualization. This knowledge will be useful for both academic purposes and real-world applications in system programming.
+겨울 방학이 끝날 때쯤이면, 프로세스 관리부터 메모리 및 스토리지 관리에 이르기까지 운영 체제가 어떻게 작동하는지에 대한 탄탄한 이해를 갖추고, 보안 및 가상화와 같은 고급 주제에 대한 통찰력을 얻게 될 것입니다. 이 지식은 학문적 목적뿐만 아니라 시스템 프로그래밍에서의 실무적인 활용에도 유용할 것입니다.

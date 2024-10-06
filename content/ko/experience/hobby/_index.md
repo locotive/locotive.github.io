@@ -12,7 +12,7 @@ design:
 sections:
   - block: resume-skills
     content:
-      title: Skills & Hobbies
+      title: 기술 & 취미
       username: admin
     design:
       show_skill_percentage: false
@@ -25,8 +25,8 @@ sections:
   - block: slider
     content:
       slides:
-        - title: "<span style='font-size:90%'>Hobby</span>"
-          content: <span style="font-size:90%">I plan projects that combine my hobbies.<span style="font-size:90%">
+        - title: "<span style='font-size:90%'>취미</span>"
+          content: <span style="font-size:90%">저는 제 취미를 결합하여 프로젝트를 계획합니다.<span style="font-size:90%">
           align: center
           background:
             image:
@@ -35,8 +35,8 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
-        - title: "<span style='font-size:90%'>Chess</span>"
-          content: <span style="font-size:90%">Improvement in concentration and quick decision-making.<span style="font-size:90%">
+        - title: "<span style='font-size:90%'>체스</span>"
+          content: <span style="font-size:90%">집중력과 순간적인 판단력을 기릅니다.<span style="font-size:90%">
           align: center
           background:
             image:
@@ -46,7 +46,7 @@ sections:
             position: center
             color: '#000'
         - title: "<span style='font-size:90%'>LoLchess</span>"
-          content: "<span style='font-size:90%'>Improvement in concentration and quick decision-making.<span style='font-size:90%'>"
+          content: "<span style='font-size:90%'>집중력과 순간적인 판단력을 기릅니다.<span style='font-size:90%'>"
           align: center
           background:
             image:
@@ -71,8 +71,8 @@ sections:
           link:  # 버튼 추가
             url: "https://open.spotify.com/playlist/5St07oBQnCjp2MRDtu5jTr?si=74b97ff67c9e4b0d"  # 이동할 페이지 링크
             text: "Chill"   # 버튼에 표시될 텍스트
-        - title: "<span style='font-size:90%'>Photography</span>"
-          content: "<span style='font-size:90%'>Exploring different perspectives</span>"
+        - title: "<span style='font-size:90%'>사진 촬영</span>"
+          content: "<span style='font-size:90%'>다양한 시각을 탐색합니다.</span>"
           align: center
           background:
             image:

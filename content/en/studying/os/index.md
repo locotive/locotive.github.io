@@ -1,5 +1,5 @@
 ---
-title: Operating Systems Study Guide
+title: Operating Systems Study Plan
 summary: Study materials focused on mastering Operating Systems concepts
 date: 2024-09-01
 authors:

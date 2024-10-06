@@ -1,6 +1,6 @@
 ---
-title: Backend Study Guide
-summary: Backend study materials
+title: 백엔드 공부 계획
+summary: 백엔드 학습 자료
 date: 2024-09-01
 authors:
     - admin
@@ -13,71 +13,66 @@ image:
   filename: "featured.jpg"
 ---
 
-## Plan
+## 계획
 
-This is a focused plan to master Backend development over the winter break. Below is a roadmap that outlines the learning objectives and key phases. Each phase combines both theory and hands-on practice to maximize learning efficiency, diving deep into each topic.
+이것은 겨울 방학 동안 백엔드 개발을 마스터하기 위한 집중 계획입니다. 아래는 학습 목표와 주요 단계를 설명하는 로드맵입니다. 각 단계는 이론과 실습을 결합하여 학습 효율성을 극대화하고, 각 주제에 대해 깊이 있게 탐구합니다.
 
-## Laying the Foundations (Weeks 1-2)
+## 기초 다지기 (1-2주)
+**핵심 주제:**
 
-**Key Topics:**
+HTTP/HTTPS 프로토콜 이해: 클라이언트-서버 통신이 어떻게 작동하는지 배우고, HTTP 상태 코드, 헤더 및 쿠키에 대해 이해합니다.
+REST API: RESTful API가 무엇인지 이해하고, 이를 설계하고 사용하는 방법을 배웁니다.
+Git & GitHub: Git을 사용하여 버전 관리를 관리하는 방법을 배우고, GitHub에서 프로젝트를 호스팅하여 협업 연습을 합니다.
 
-Understanding HTTP/HTTPS Protocols: Learn how client-server communication works, including HTTP status codes, headers, and cookies.
-REST API: Understand what RESTful APIs are and how to design and use them.
-Git & GitHub: Learn how to manage version control using Git, and practice collaboration by hosting a project on GitHub.
+## 백엔드 언어 선택 및 기본 학습 (3-5주)
 
-## Choosing a Backend Language and Basic Learning (Weeks 3-5)
+**핵심 주제:**
 
-**Key Topics:**
+Python(Django) 또는 Node.js(Express)와 같은 언어를 선택하고 깊이 있게 학습합니다:
+기본 문법부터 시작하여 점차 웹 서버 구축으로 나아갑니다.
+간단한 API를 생성하고 데이터를 주고받는 방법에 익숙해집니다.
 
-Choose a language like Python (Django) or Node.js (Express) and dive deep:
+데이터베이스 소개:
+SQL과 NoSQL 데이터베이스를 비교하고 사용 사례를 이해합니다.
+MySQL 또는 PostgreSQL을 설치하고 사용해 봅니다.
 
-Start with basic syntax and gradually move to building a web server.
-Create simple APIs and get familiar with sending and receiving data.
-Introduction to Databases:
+## MongoDB와 같은 NoSQL 데이터베이스에 대해 배우며 이해를 넓힙니다.
 
-Compare SQL and NoSQL databases and their use cases.
-Install and practice using MySQL or PostgreSQL.
-Learn about NoSQL databases like MongoDB to broaden your understanding.
+중급 백엔드 개발로 나아가기 (6-8주)
+**핵심 주제:**
 
-## Moving to Intermediate Backend Development (Weeks 6-8)
+인증 및 권한 부여:
+JWT(JSON Web Tokens)를 사용하여 인증을 구현합니다.
+OAuth2와 같은 외부 인증 방법에 대해 배웁니다.
 
-**Key Topics:**
-
-Authentication and Authorization:
-
-Implement authentication using JWT (JSON Web Tokens).
-Learn about external authentication methods like OAuth2.
-Asynchronous Processing and Message Queues:
-
-Understand the concept of asynchronous task handling.
+비동기 처리 및 메시지 큐:
+비동기 작업 처리 개념을 이해합니다.
+RabbitMQ 또는 Apache Kafka와 같은 메시지 큐를 사용하는 방법을 배웁니다.
 Learn how to use message queues such as RabbitMQ or Apache Kafka.
 
-## Project-Based Learning (Weeks 9-12)
+## 프로젝트 기반 학습 (9-12주)
 
-**Key Topics:**
+**핵심 주제:**
 
-Building a Full Project:
+전체 프로젝트 구축:
+얻은 지식을 활용하여 전체 백엔드 프로젝트를 완성합니다.
+간단한 전자상거래 사이트, 블로그 또는 TODO 리스트 API를 생성하여 실제 시나리오에 대한 실습을 합니다.
 
-Use the knowledge gained to complete a full backend project.
-Create a simple e-commerce site, blog, or TODO list API to get hands-on experience with real-world scenarios.
-Deployment and Operations:
+배포 및 운영:
+Docker를 사용한 컨테이너화에 대해 배웁니다.
+AWS, Heroku 또는 DigitalOcean에 애플리케이션을 배포합니다.
 
-Learn containerization using Docker.
-Deploy applications on AWS, Heroku, or DigitalOcean.
-Set up CI/CD pipelines to automate testing and deployment.
+## 최적화 및 고급 주제 (13-14주)
 
-## Optimization and Advanced Topics (Weeks 13-14)
+**핵심 주제:**
 
-**Key Topics:**
+캐싱 전략(예: Redis 사용)에 대해 배웁니다.
+캐싱 전략(예: Redis 사용)에 대해 배웁니다.
+데이터베이스 쿼리 최적화 및 성능 튜닝을 합니다.
 
-Application Performance Optimization:
+로깅 및 모니터링:
+ELK 스택(Elasticsearch, Logstash, Kibana) 또는 Prometheus와 Grafana를 사용하여 로깅 및 모니터링 시스템을 설정합니다.
 
-Learn caching strategies (e.g., using Redis).
-Optimize database queries and performance tuning.
-Logging and Monitoring:
+## 목표:
 
-Set up logging and monitoring systems using the ELK stack (Elasticsearch, Logstash, Kibana) or Prometheus with Grafana.
-
-## Goal:
-
-By the end of winter break, the goal is to follow these steps systematically to master all essential Backend skills and apply them through project work.
+겨울 방학이 끝날 때까지 이 단계를 체계적으로 따라 모든 필수 백엔드 기술을 마스터하고 프로젝트 작업을 통해 이를 적용하는 것이 목표입니다.

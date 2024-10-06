@@ -6,8 +6,8 @@ title: locotive
 name_pronunciation: Jaemin Nam
 
 # Full name (for SEO)
-first_name: Nam
-last_name: Jaemin
+first_name: 남
+last_name: 재민
 
 # Status emoji
 status:
@@ -20,11 +20,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Student
+role: 학생
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: JEONBUK NATIONAL UNIVERSITY
+  - name: 전북대학교
     url: https://www.jbnu.ac.kr/eng/
 
 # Social network links
@@ -45,39 +45,37 @@ interests:
   - Data Science
 
 education:
-  - area: Bachelor's Degree in Computer Science
-    institution: Jeonbuk National University
+  - area: 컴퓨터 공학학부 재학
+    institution: 전북대학교
     date_start: 2021-03-01
     summary: |
       GPA: 3.9/4.5
-       Currently pursuing a Bachelor's degree in Computer Science. Focused on software engineering, algorithms, and machine learning. Actively involved in various programming projects and competitions.
+       현재 컴퓨터 공학 학사 학위 재학 중입니다. 소프트웨어 공학, 알고리즘, 웹에 집중하여 공부하고 있습니다. 다양한 프로그래밍 프로젝트와 대회에 적극적으로 참여하고 있습니다
     Courses included:
-      - Data Structures and Algorithms
-      - Operating Systems
-      - Computer Networks
-      - Database
-      - Computer Architecture
-      - Software Engineering
+      - 자료구조 알고리즘
+      - 운영체제
+      - 컴퓨터 네트워크
+      - 데이터베이스
+      - 컴퓨터 구조
+      - 소프트웨어 공학
     button:
-      text: 'Read Thesis'
+      text: '학과 홈페이지'
       icon: computer
       url: 'https://csai.jbnu.ac.kr/csai/index.do'
 work:
-  - position: Frontend Software Engineer
+  - position: 프론트웨어 엔지니어링
     company_name: Javice
     company_url: 'https://jbnu-javice.github.io/'
     company_logo: ''
     date_start: 2023-04-30
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - React를 활용
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: 기술 능력
     items:
       - name: C++
         description: ''
@@ -91,7 +89,7 @@ skills:
         description: ''
         percent: 40
         icon: circle-stack
-  - name: Hobbies
+  - name: 취미
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
@@ -113,15 +111,14 @@ skills:
         icon: camera
 
 languages:
-  - name: Korean
+  - name: 한국어
     percent: 100
-  - name: English
+  - name: 영어
     percent: 60
-  - name: Japanese
+  - name: 일본어
     percent: 25
 ---
 
 ## About Me
 
-I am Nam Jaemin, a third-year Computer Science student at Jeonbuk National University. My areas of interest include Web Backend and Data Science.
-And I’m passionate about exploring various fields within computer science, with a particular focus on backend web development.
+저는 전북대학교 컴퓨터 공학 3학년인 남재민입니다. 저의 관심 분야는 웹 백엔드와 데이터 과학입니다. 컴퓨터 과학의 다양한 분야를 탐구하는 데 열정을 가지고 있으며, 특히 백엔드 웹 개발에 중점을 두고 있습니다.

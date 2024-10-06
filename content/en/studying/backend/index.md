@@ -1,5 +1,5 @@
 ---
-title: Backend Study Guide
+title: Backend Study Plan
 summary: Backend study materials
 date: 2024-09-01
 authors:

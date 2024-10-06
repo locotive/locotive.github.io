@@ -1,5 +1,5 @@
 ---
-title: Java Study Guide
+title: Java Study Plan
 summary: Study materials focused on mastering Java
 date: 2024-09-01
 authors:
