@@ -58,7 +58,7 @@
             </h1>
             <!-- Content -->
             {{ with $item.content }}
-            <p class="hero-lead">
+            <p class="hero-lead" style="margin-bottom: 10px;">
               {{ . | emojify | $page.RenderString }}
             </p>
             {{ end }}
