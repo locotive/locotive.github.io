@@ -50,23 +50,20 @@
 
       <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="{{ $style_bg | safeCSS }} text-align: center; height: {{ $slider_height }};">
         <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }}">
-          <div class="wg-hero dark container-fluid" style="margin: 0 6rem; text-align: {{ $item.align | default "center" }};">
+          <!-- wg-hero dark container-fluid 덮도록 수정 -->
+          <div class="wg-hero dark container-fluid d-flex flex-column justify-content-center align-items-center" style="width: 100%; height: 100%; padding: 0; margin: 0;">
+            <!-- Title -->
             <h1 class="hero-title">
               {{ with $item.title }}{{ . | markdownify | emojify }}{{ end }}
             </h1>
-
+            <!-- Content -->
             {{ with $item.content }}
-            <p class="hero-lead" style="{{ if eq $item.align "center" }}margin: 0 auto;{{ else if eq $item.align "right" }}margin-left: auto; margin-right: 0;{{ end }}">
+            <p class="hero-lead">
               {{ . | emojify | $page.RenderString }}
             </p>
             {{ end }}
-
+            <!-- Button -->
             {{ if $item.link.url }}
-              {{ $pack := $item.link.icon_pack | default "fas" }}
-              {{ $pack_prefix := $pack }}
-              {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-                {{ $pack_prefix = "fa" }}
-              {{ end }}
               <p>
                 <a href="{{ $item.link.url }}" class="custom-btn custom-btn-light custom-btn-lg custom-mt-3">
                   {{- with $item.link.icon -}}<i class="custom-icon" style="padding-right: 10px;"></i>{{- end -}}
@@ -76,7 +73,7 @@
             {{ end }}
           </div>
         </div>
-      </div>  
+      </div>
     {{ end }}
   </div>
 
@@ -106,7 +103,20 @@
 
 <style>
   .carousel-inner .carousel-item {
-    display: none;
+    height: 100%; /* carousel-item의 높이를 100%로 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wg-hero {
+    width: 100%;  /* wg-hero가 부모 요소를 완전히 덮도록 설정 */
+    height: 100%; /* 부모인 carousel-item을 완전히 덮는 높이 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 투명도 추가 */
   }
 
   .carousel-inner .carousel-item.active {
@@ -202,34 +212,33 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
-
   .custom-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 2px solid transparent;
+    color: white;
+    background-color: #007bff;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    font-weight: bold;
-    color: lightblue;
-    text-decoration: underline;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
   }
+
+  .custom-btn:hover {
+    background-color: #0056b3;
+  }
+  
   .hero-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1rem;
-  height: auto;
-  width: auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 .hero-lead {
   font-size: 1.25rem;
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    color: white;
 }
 
 </style>
