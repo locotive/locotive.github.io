@@ -36,7 +36,10 @@ header:
     show_theme_chooser: true
     logo:
       text: "locotive"
-
+  meta:
+    - name: "google-site-verification"
+      content: "QIWfqj10Ty10qnhd9nb9gIxcQyOICoccW7Ic74KMdxc"
+      
 # Site footer
 footer:
   copyright:
