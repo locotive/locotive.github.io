@@ -49,24 +49,23 @@
       {{ end }}
 
       <div class="carousel-item{{ if eq $index 0 }} active{{ end }}" style="{{ $style_bg | safeCSS }} text-align: center; height: {{ $slider_height }};">
-        <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }}">
-          <div class="wg-hero dark container-fluid" style="margin: 0 6rem; text-align: {{ $item.align | default "center" }};">
+        <div class="position-absolute d-flex w-100 h-100 justify-content-center align-items-center" style="{{ $style_filter | safeCSS }} text-align: center;">
+          <div class="wg-hero dark container-fluid d-flex flex-column justify-content-center align-items-center" style="text-align: {{ $item.align | default "center" }};">
+            
+            <!-- Title -->
             <h1 class="hero-title">
               {{ with $item.title }}{{ . | markdownify | emojify }}{{ end }}
             </h1>
-
+      
+            <!-- Content -->
             {{ with $item.content }}
-            <p class="hero-lead" style="{{ if eq $item.align "center" }}margin: 0 auto;{{ else if eq $item.align "right" }}margin-left: auto; margin-right: 0;{{ end }}">
+            <p class="hero-lead">
               {{ . | emojify | $page.RenderString }}
             </p>
             {{ end }}
-
+      
+            <!-- Button -->
             {{ if $item.link.url }}
-              {{ $pack := $item.link.icon_pack | default "fas" }}
-              {{ $pack_prefix := $pack }}
-              {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-                {{ $pack_prefix = "fa" }}
-              {{ end }}
               <p>
                 <a href="{{ $item.link.url }}" class="custom-btn custom-btn-light custom-btn-lg custom-mt-3">
                   {{- with $item.link.icon -}}<i class="custom-icon" style="padding-right: 10px;"></i>{{- end -}}
@@ -74,9 +73,10 @@
                 </a>
               </p>
             {{ end }}
+            
           </div>
         </div>
-      </div>  
+      </div>      
     {{ end }}
   </div>
 
