@@ -84,4 +84,4 @@ features:
     
 params:
   social:
-    image: 'sharing.jpg'
+    image: 'assets/media/sharing.jpg'
