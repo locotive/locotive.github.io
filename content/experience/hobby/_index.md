@@ -55,6 +55,9 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
+          link:  # 버튼 추가
+            url: "https://chzzk.naver.com/e9c11510c1c6097a20b92ebcb289b26a"  # 이동할 페이지 링크
+            text: "Favorite"   # 버튼에 표시될 텍스트
         - title: "<span style='font-size:90%'>Listening to music</span>"
           content: "<span style='font-size:90%'>I do a lot of coding work while listening to music.</span>"
           align: center
@@ -65,6 +68,9 @@ sections:
                 brightness: 0.4
             position: center
             color: '#000'
+          link:  # 버튼 추가
+            url: "https://open.spotify.com/playlist/5St07oBQnCjp2MRDtu5jTr?si=74b97ff67c9e4b0d"  # 이동할 페이지 링크
+            text: "Chill"   # 버튼에 표시될 텍스트
         - title: "<span style='font-size:90%'>Photography</span>"
           content: "<span style='font-size:90%'>Exploring different perspectives</span>"
           align: center
