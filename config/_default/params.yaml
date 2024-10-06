@@ -6,18 +6,40 @@
 # Appearance
 appearance:
   mode: system
-  color: emerald
+  color: "#ff5733"
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'locotive'
+    org_name: 
+      - 'locotive'
+      - '남재민'
+      - '전북대학교 남재민'
+      - '전북대 남재민'
+      - 'JBNU NamJaemin'
+      - '전북대 남재민'
+      - 'JBNU의 남재민'
+      - '남재민 | 전북대학교'
+      - '전북대학교 학생 남재민'
+      - '남재민'
+      - '컴퓨터 과학 전공'
+      - '전북대 소속 남재민'
+      - 'JBNU의 컴퓨터 과학 전공 남재민'
     description: 'A personal blog by a JBNU student sharing insights on research and technology.'
+    keywords: 
+      - '전북대학교'
+      - '남재민'
+      - 'JBNU'
+      - '컴퓨터 과학'
+      - '천체 사진'
+      - '임베디드 시스템'
+      - '기계 설계'
+      - '전자 제어'
     twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: '9V5zbV5r095YDeYArxdZm6FnAsiu'
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -25,6 +47,7 @@ marketing:
   verification:
     google: ''
     baidu: ''
+
 
 # Site header
 header:
@@ -36,10 +59,7 @@ header:
     show_theme_chooser: true
     logo:
       text: "locotive"
-  meta:
-    - name: "google-site-verification"
-      content: "QIWfqj10Ty10qnhd9nb9gIxcQyOICoccW7Ic74KMdxc"
-      
+
 # Site footer
 footer:
   copyright:
@@ -61,6 +81,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
 params:
-  primary_color: '#ff5733' # 기본 테마 색상
-  secondaryColor: "#0033cc"  # 보조 색상
+  social:
+    image: sharing.jpg
