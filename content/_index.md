@@ -122,7 +122,7 @@ sections:
         folders:
           - completed
     design:
-      view: date-title-summary
+      view: citation
       columns: 3
 
   - block: collection
