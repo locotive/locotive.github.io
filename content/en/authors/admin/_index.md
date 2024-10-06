@@ -69,10 +69,7 @@ work:
     company_logo: ''
     date_start: 2023-04-30
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - use react
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

@@ -69,8 +69,7 @@ work:
     company_logo: ''
     date_start: 2023-04-30
     summary: |
-      Responsibilities include:
-      - React를 활용
+      - React를 활용하여 프로젝트 진행
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
