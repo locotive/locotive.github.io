@@ -11,6 +11,7 @@ tags:
  - Computer Science
 image:
     filename: "featured.jpg"
+    filename: "gabriel-heinzer-xbEVM6oJ1Fs-unsplash.jpg"
 ---
 
 ## Plan
