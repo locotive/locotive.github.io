@@ -36,7 +36,7 @@ sections:
           align: center
           background:
             image:
-              filename: JBNU.png
+              filename: vasily-koloda-8CqDvPuo_kI-unsplash.jpg
               filters:
                 brightness: 0.4
             position: center
