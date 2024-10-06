@@ -58,3 +58,6 @@ features:
     enable: false
   privacy_pack:
     enable: false
+params:
+  primaryColor: "#ff6600"  # 기본 테마 색상
+  secondaryColor: "#0033cc"  # 보조 색상
