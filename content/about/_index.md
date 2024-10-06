@@ -13,7 +13,7 @@ sections:
       text: ""
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/empty.pdf
     design:
       css_class: dark
 
